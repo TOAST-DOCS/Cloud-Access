@@ -22,7 +22,7 @@ Cloud Access는 제로 트러스트 보안 모델을 기반으로 NHN Cloud 리�
 
 <br>
 
-  ## 구성
+## 구성
 
   Cloud Access는 아래와 같이 구성할 수 있습니다.
 
