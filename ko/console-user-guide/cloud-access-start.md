@@ -101,9 +101,9 @@ Cloud Access 서비스 사용을 위한 에이전트를 다운로드합니다. �
 
 | 운영체제 | 버전| 다운로드 | 업데이트 날짜 |
 |--------|------|------|------|
-| Windows(64bit)|1.1.0|[CloudAccess_Setup_x64](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_04c78c238ba54583bb1036b393ec6ae5/windows/installer/CloudAccess_Setup_x64.exe)|2025.11.11|
-| Windows(32bit)|1.1.0|[CloudAccess_Setup_x86](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_04c78c238ba54583bb1036b393ec6ae5/windows/installer/CloudAccess_Setup_x86.exe)|2025.11.11|
-|macOS|1.1.0|[CloudAccess_macOS](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_04c78c238ba54583bb1036b393ec6ae5/macos/CloudAccess%20Installer.dmg)|2025.11.11|
+| Windows(64bit)|1.2.0|[CloudAccess_Setup_x64](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_04c78c238ba54583bb1036b393ec6ae5/windows/installer/CloudAccess_Setup_x64.exe)|2026. 01. 13.|
+| Windows(32bit)|1.2.0|[CloudAccess_Setup_x86](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_04c78c238ba54583bb1036b393ec6ae5/windows/installer/CloudAccess_Setup_x86.exe)|2026. 01. 13.|
+|macOS|1.1.1|[CloudAccess_macOS](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_04c78c238ba54583bb1036b393ec6ae5/macos/CloudAccess%20Installer.dmg)|2026. 01. 13.|
 
 !!! tip "알아두기"
     Cloud Access 에이전트는 사용자 단말과 서비스 간의 보안 연결을 통해 외부 환경에서도 안전한 내부 서비스 접근을 지원하는 전용 프로그램입니다.
