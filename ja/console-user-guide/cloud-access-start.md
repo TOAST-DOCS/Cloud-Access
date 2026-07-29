@@ -1,16 +1,20 @@
+<!-- pre-align:aligned sig=7d9aee4cb102 -->
+
 # Cloud Access 開始ガイド
 
 **セキュリティ > Cloud Access > コンソール使用ガイド > Cloud Access開始**
 
 <br>
 
-## コンソール設定
+<a id="console-settings"></a>
+## コンソール設定 { #console-settings }
 
 エージェントの準備が完了したら、Cloud Accessサービスを使用するために接続設定とルート設定を行います。
 
 <br>
 
-### 設定情報の保存
+<a id="save-configuration-information"></a>
+### 設定情報の保存 { #save-configuration-information }
 
 接続設定情報を入力して保存します。保存後、Cloud Accessを使用できます。
 
@@ -31,11 +35,13 @@
     
 <br>
 
-## ルート設定
+<a id="route-settings"></a>
+## ルート設定 { #route-settings }
 
 外部エージェントを使用して接続したユーザーが内部インスタンスにアクセスできるよう、ルートを構成します。
 
-### 1つのVPC
+<a id="one-vpc"></a>
+### 1つのVPC { #one-vpc }
 
 * ユーザーIP割り当て帯域: 10.0.0.0/24
 * VPC: 172.16.0.0/12
@@ -47,7 +53,8 @@
 * 宛先CIDR: 10.0.0.0/24
 * ゲートウェイ: Virtual_IPタイプのNCAccess_INF_SUB_PORT_VIP
 
-### 2つのVPC
+<a id="two-vpcs"></a>
+### 2つのVPC { #two-vpcs }
 
 * ユーザーIP割り当て帯域: 10.0.0.0/24
 * VPC1: 172.16.0.0/12
@@ -65,7 +72,8 @@
 * 対象CIDR: 10.0.0.0/24
 * ゲートウェイ: Virtual_IPタイプのNCAccess_INF_SUB_PORT_VIP
 
-### 他のプロジェクト
+<a id="other-projects"></a>
+### 他のプロジェクト { #other-projects }
 
 * ユーザーIP割り当て帯域: 10.0.0.0/24
 * プロジェクト1のVPC: 172.16.0.0/12
@@ -92,7 +100,8 @@
     
 <br>
 
-## エージェントのダウンロード
+<a id="download-the-agent"></a>
+## エージェントのダウンロード { #download-the-agent }
 
 Cloud Accessサービスを利用するためのエージェントをダウンロードします。対応OSは以下の通りです。
 
@@ -111,9 +120,11 @@ Cloud Accessサービスを利用するためのエージェントをダウン�
 
 <br>
 
-## 接続設定
+<a id="add-a-connection"></a>
+## 接続設定 { #add-a-connection }
 
-### 接続の追加
+<a id="add-connection"></a>
+### 接続の追加 { #add-connection }
 
 NHN Cloudリソースに接続するための項目を追加します。
 
@@ -127,7 +138,8 @@ NHN Cloudリソースに接続するための項目を追加します。
  
 ➍ 「検証」ボタンをクリックし、検証完了後、➎顧客名が表示されます。その後、**追加**をクリックして接続を完了します。
 
-### 接続の削除
+<a id="delete-connection"></a>
+### 接続の削除 { #delete-connection }
 
 接続項目をクリックすると、**接続削除**ボタンが有効になり、追加した接続を削除できます。
 
@@ -140,16 +152,19 @@ NHN Cloudリソースに接続するための項目を追加します。
 
 <br>
 
-## 認証によるトンネル接続
+<a id="tunnel-connection-via-authentication"></a>
+## 認証によるトンネル接続 { #tunnel-connection-via-authentication }
 
 接続が必要な項目を選択し、**接続**をクリックして認証を行います。
 
-### 案内表示
+<a id="notice-settings"></a>
+### 案内表示 { #notice-settings }
 
 * 管理者が設定した案内メッセージを表示します。
     * **設定 > 案内設定**が**使用しない**の場合は表示されません。
 
-### 第1段階認証（アカウントとパスワード）
+<a id="first-authentication-account-password"></a>
+### 第1段階認証（アカウントとパスワード） { #first-authentication-account-password }
 
 ![login_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/6.png)
 
@@ -157,11 +172,13 @@ NHN Cloudリソースに接続するための項目を追加します。
 * パスワード：メールで届いた初期パスワードを入力します。
 * アカウント名の保存: クリックしてログインした後、再ログインする際に直前にログインしたアカウント名を自動で入力して表示します。
 
-### 個人情報収集・利用同意
+<a id="agree-to-collection-and-usage-of-personal-information"></a>
+### 個人情報収集・利用同意 { #agree-to-collection-and-usage-of-personal-information }
 * Cloud Accessサービス運用のため個人情報を収集します。
     * 拒否した場合はサービス利用が制限されます。
 
-### 追加認証
+<a id="additional-authentication"></a>
+### 追加認証 { #additional-authentication }
 
 * 第1段階完了後、設定された認証ポリシーに従って追加認証を実施します。 
     * サポートする認証方法：
@@ -170,7 +187,8 @@ NHN Cloudリソースに接続するための項目を追加します。
         * TOTP（ワンタイムパスワード） 
         * 生体情報（パスキー） 
 
-### 初期パスワードの変更
+<a id="change-initial-password"></a>
+### 初期パスワードの変更 { #change-initial-password }
 
 * 初期パスワードを変更します。
     * 管理者が設定したパスワードポリシーに従って変更してください。
@@ -188,13 +206,15 @@ NHN Cloudリソースに接続するための項目を追加します。
     
 <br>
 
-## エージェントのトレイ機能
+<a id="agent-features"></a>
+## エージェントのトレイ機能 { #agent-features }
 
 エージェントのトレイアイコンから利用できる機能です。
 
 <br>
 
-### 接続前
+<a id="before-connecting-to-agent"></a>
+### 接続前 { #before-connecting-to-agent }
  * 開く：接続画面を表示
  * 接続：接続項目を表示
  * アップデート確認：バージョン確認および更新
@@ -204,7 +224,8 @@ NHN Cloudリソースに接続するための項目を追加します。
       * 言語：韓国語、日本語、英語
  * 終了：エージェントを終了
 
-### 接続後
+<a id="after-connecting-to-agent"></a>
+### 接続後 { #after-connecting-to-agent }
 顧客名とアカウント名が表示
 * 開く：接続項目表示
 * 接続解除：接続解除
@@ -215,7 +236,8 @@ NHN Cloudリソースに接続するための項目を追加します。
 
 <br>
 
-## エージェントの削除
+<a id="delete-agent"></a>
+## エージェントの削除 { #delete-agent }
 
 エージェントはユーザーがいつでも直接削除できます。
 

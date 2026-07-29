@@ -1,16 +1,20 @@
+<!-- pre-align:aligned sig=7d9aee4cb102 -->
+
 # Getting Started with Cloud Access
 
 **Security > Cloud Access > Console User Guide > Getting Started with Cloud Access**
 
 <br>
 
-## Console Settings
+<a id="console-settings"></a>
+## Console Settings { #console-settings }
 
 After preparing the agent, configure the connection and routing settings to start using the Cloud Access service.
 
 <br>
 
-### Save Configuration Information
+<a id="save-configuration-information"></a>
+### Save Configuration Information { #save-configuration-information }
 
 Enter and save the connection settings. Once saved, Cloud Access becomes available.
 
@@ -30,11 +34,13 @@ Enter and save the connection settings. Once saved, Cloud Access becomes availab
 
 <br>
 
-## Route Settings
+<a id="route-settings"></a>
+## Route Settings { #route-settings }
 
 Configure routing so users connected via agents can access internal instances.
 
-### One VPC
+<a id="one-vpc"></a>
+### One VPC { #one-vpc }
 
 * User IP assigned band: 10.0.0.0/24
 * VPC: 172.16.0.0/12
@@ -46,7 +52,8 @@ When set as above, select the routing table to which the instance requiring conn
 * Destination CIDR: 10.0.0.0/24
 * Gateway: NCAccess_INF_SUB_PORT_VIP of type Virtual_IP
 
-### Two VPCs
+<a id="two-vpcs"></a>
+### Two VPCs { #two-vpcs }
 
 * User IP assigned band: 10.0.0.0/24
 * VPC1: 172.16.0.0/12
@@ -64,7 +71,8 @@ Then, select the **Route** tab in **Peering Gateway - Peering** to add a local r
 * Destination CIDR: 10.0.0.0/24
 * Gateway: NCAccess_INF_SUB_PORT_VIP of type Virtual_IP
 
-### Other Projects
+<a id="other-projects"></a>
+### Other Projects { #other-projects }
 
 * User IP assigned band: 10.0.0.0/24
 * Project 1 VPC: 172.16.0.0/12
@@ -91,7 +99,8 @@ Then, select the **Route** tab in **Peering Gateway - Project Peering** to add a
 
 <br>
 
-## Download the Agent
+<a id="download-the-agent"></a>
+## Download the Agent { #download-the-agent }
 
 Download the agent to use Cloud Access. The service supports the following OS:
 
@@ -110,9 +119,11 @@ Download the agent to use Cloud Access. The service supports the following OS:
     
 <br>
 
-## Add a Connection
+<a id="add-a-connection"></a>
+## Add a Connection { #add-a-connection }
 
-### Add Connection
+<a id="add-connection"></a>
+### Add Connection { #add-connection }
 
 Add a connection item to access NHN Cloud resources via the agent.
 
@@ -126,7 +137,8 @@ Enter the ➊ Domain address, ➋ Customer key, and ➌ Secret key, provided by 
 
 Click the ➍ **Validate** button. Once verified, the ➎ Customer name will be shown. Click **Add** to complete the connection.
 
-### Delete Connection
+<a id="delete-connection"></a>
+### Delete Connection { #delete-connection }
 
 Click a connection item to activate the **Delete Connection** button and remove the connection.
 
@@ -139,16 +151,19 @@ Click a connection item to activate the **Delete Connection** button and remove 
 
 <br>
 
-## Tunnel Connection via Authentication
+<a id="tunnel-connection-via-authentication"></a>
+## Tunnel Connection via Authentication { #tunnel-connection-via-authentication }
 
 Select the required connection and click **Connect** to proceed with authentication.
 
-### Notice Settings
+<a id="notice-settings"></a>
+### Notice Settings { #notice-settings }
 
 * Displays notices set by the administrator.  
     * Will not be shown if the option is disabled under **Settings > Notice Settings**.
 
-### First Authentication (Account & Password)
+<a id="first-authentication-account-password"></a>
+### First Authentication (Account & Password) { #first-authentication-account-password }
 
 ![login_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/6.png)
 
@@ -156,11 +171,13 @@ Select the required connection and click **Connect** to proceed with authenticat
 * Password: Enter the temporary password sent to your registered email.
 * Save Account Name: After clicking and logging in, the account name you logged in with will be automatically entered and exposed when you log in again.
 
-### Agree to collection and usage of personal information
+<a id="agree-to-collection-and-usage-of-personal-information"></a>
+### Agree to collection and usage of personal information { #agree-to-collection-and-usage-of-personal-information }
 * Personal information is collected to operate Cloud Access service.
     * Declining the agreement may restrict service use.
 
-### Additional Authentication
+<a id="additional-authentication"></a>
+### Additional Authentication { #additional-authentication }
 
 * After the first authentication is completed, additional authentication is performed according to the policy configured by the administrator.
     * Four authentication methods are supported, as shown below.
@@ -169,7 +186,8 @@ Select the required connection and click **Connect** to proceed with authenticat
         * TOTP (time-based one-time password) 
         * Biometrics (Passkey)
 
-### Change Initial Password
+<a id="change-initial-password"></a>
+### Change Initial Password { #change-initial-password }
 
 * Change the initial password.
     * Follow the password policy set by the administrator.
@@ -186,13 +204,15 @@ Select the required connection and click **Connect** to proceed with authenticat
 
 <br>
 
-## Agent Features
+<a id="agent-features"></a>
+## Agent Features { #agent-features }
 
 Overview of the agent tray icon features.
 
 <br>
 
-### Before Connecting to Agent
+<a id="before-connecting-to-agent"></a>
+### Before Connecting to Agent { #before-connecting-to-agent }
  * Open: Displays the connection screen.
  * Connect: Shows connection items.
  * Check Updates: Verifies agent version and updates if necessary.
@@ -202,7 +222,8 @@ Overview of the agent tray icon features.
       * Language Settings: Korean, English, Japanese
  * Quit: Close the agent.
 
-### After Connecting to Agent
+<a id="after-connecting-to-agent"></a>
+### After Connecting to Agent { #after-connecting-to-agent }
 Shows customer and account names.
 * Open: Displays connection screen.
 * Disconnect: Disconnects the agent.
@@ -213,7 +234,8 @@ Shows customer and account names.
 
 <br>
 
-## Delete Agent
+<a id="delete-agent"></a>
+## Delete Agent { #delete-agent }
 
 Users can delete the agent at any time.
 

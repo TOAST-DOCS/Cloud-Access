@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=24c6566066ad -->
+
 # オブジェクト
 
 **セキュリティ > Cloud Access > コンソール使用ガイド > オブジェクト**
@@ -6,23 +8,28 @@
 
 <br>
 
-## IPオブジェクトの管理
+<a id="manage-ip"></a>
+## IPオブジェクトの管理 { #manage-ip }
 
-### 追加
+<a id="add"></a>
+### 追加 { #add }
 
 ![object_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/object_add_1.png)
 
 必須項目を入力してオブジェクトを作成します。
 
-### 編集
+<a id="modify"></a>
+### 編集 { #modify }
 
 **編集**をクリックしてオブジェクトを修正します。
 
-### 削除
+<a id="delete"></a>
+### 削除 { #delete }
 
 **削除**をクリックしてオブジェクトを削除します。
 
-### 追加機能
+<a id="additional-features"></a>
+### 追加機能 { #additional-features }
 
 * ユーザーオブジェクトの追加：登録されたユーザーを基にオブジェクトを追加できます。
 * テンプレートのダウンロード：一括登録に必要なテンプレートファイルをダウンロードします。
@@ -41,23 +48,28 @@
 
 <br>
 
-## ポートオブジェクトの管理
+<a id="manage-port"></a>
+## ポートオブジェクトの管理 { #manage-port }
 
-### 追加
+<a id="manage-port-add"></a>
+### 追加 { #manage-port-add }
 
 ![object_add_2.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/object_add_2.png)
 
 必須項目を入力してオブジェクトを作成します。
 
-### 編集
+<a id="manage-port-modify"></a>
+### 編集 { #manage-port-modify }
 
 **編集**をクリックしてオブジェクトを修正します。
 
-### 削除
+<a id="manage-port-delete"></a>
+### 削除 { #manage-port-delete }
 
 **削除**をクリックしてオブジェクトを削除します。
 
-### 追加機能
+<a id="manage-port-additional-features"></a>
+### 追加機能 { #manage-port-additional-features }
 
 * テンプレートのダウンロード：一括登録に必要なテンプレートファイルをダウンロードします。
 

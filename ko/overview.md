@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=b92c97be33b3 -->
+
 # Cloud Access 개요
 
 **Security > Cloud Access > 개요**
@@ -8,7 +10,8 @@ Cloud Access는 제로 트러스트 보안 모델을 기반으로 NHN Cloud 리�
 
 <br>
 
-## 주요 기능
+<a id="main-features"></a>
+## 주요 기능 { #main-features }
 
 * 맞춤형 계정 관리
     * 관리자는 각 사용자에게 맞춤형 접속 권한과 정책을 적용할 수 있습니다. 단순한 허용/차단을 넘어서 사용자가 어떤 리소스에, 어느 시간대에, 어떤 디바이스를 사용하여 접근 가능한지를 상세하게 제어할 수 있습니다.
@@ -22,7 +25,8 @@ Cloud Access는 제로 트러스트 보안 모델을 기반으로 NHN Cloud 리�
 
 <br>
 
-## 구성 및 동작 방식
+<a id="configuration-how-it-works"></a>
+## 구성 및 동작 방식 { #configuration-how-it-works }
 
 관리자는 NHN Cloud 콘솔을 통해 정책 결정 지점(policy decision point, PDP)에 사용자 정책을 설정합니다. 이후 사용자가 로그인을 통해 내부 리소스에 접근을 시도하면 정책 시행 지점(policy enforcement point, PEP)인 Cloud Access 서비스를 통해 실시간 정책 검증을 수행하여 접근을 허용 또는 차단합니다.
 
@@ -34,7 +38,8 @@ Cloud Access는 제로 트러스트 보안 모델을 기반으로 NHN Cloud 리�
 
 <br>
 
-## 요금
+<a id="price"></a>
+## 요금 { #price }
 Cloud Access 서비스의 요금 결제는 아래와 같습니다.
 
 * **설정-연결 설정**에서 서비스에 필요한 설정을 진행한 뒤 저장하여 완료되는 순간부터 요금이 발생합니다.
@@ -44,7 +49,8 @@ Cloud Access 서비스의 요금 결제는 아래와 같습니다.
 
 <br>
 
-## 비활성화
+<a id="disable"></a>
+## 비활성화 { #disable }
 
 !!! danger "주의"
     한국(판교) 리전과 한국(평촌) 리전에 각각 Cloud Access 서비스가 활성화된 상태에서 서비스를 비활성화 시 모든 리전에 있는 서비스가 비활성화됩니다. 비활성화 시 유의하세요. (기능 개선 예정) 

@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=a867bdc4fe63 -->
+
 # 設定
 
 **セキュリティ > Cloud Access > コンソール使用ガイド > 設定**
@@ -6,13 +8,16 @@
 
 <br>
 
-## ログ設定
+<a id="log-settings"></a>
+## ログ設定 { #log-settings }
 
-### デフォルト拒否ポリシーのログ設定
+<a id="default-deny-policy-log-settings"></a>
+### デフォルト拒否ポリシーのログ設定 { #default-deny-policy-log-settings }
 
 Cloud Accessサービスを有効にすると、**ポリシー > ACLポリシー**タブに default-deny ポリシーが表示されます。**使用**に設定すると、そのポリシーに一致するトラフィックのログが保存されます。
 
-### リモートログ転送設定
+<a id="remote-log-transfer-settings"></a>
+### リモートログ転送設定 { #remote-log-transfer-settings }
 
 Cloud Accessの運用中に生成されたトラフィックログをSyslog、Object Storage、Log & Crash Searchを利用してリモートに自動転送し、長期保管が可能です。
 
@@ -37,14 +42,17 @@ Cloud Accessの運用中に生成されたトラフィックログをSyslog、Ob
 
 <br>
 
-## 一般設定
+<a id="general-settings"></a>
+## 一般設定 { #general-settings }
 
-### 接続設定
+<a id="connection-settings"></a>
+### 接続設定 { #connection-settings }
 
 * Cloud Accessサービスの有効化時に入力した情報を確認できます。顧客名とアルゴリズムは変更可能です。
     * サポートされているアルゴリズム：AES-256、ChaCha20
 
-### ログインセキュリティ設定
+<a id="login-security-settings"></a>
+### ログインセキュリティ設定 { #login-security-settings }
 
 * ログイン失敗回数、パスワード有効期間、パスワードポリシーを設定します。
     * ログイン失敗：ログイン失敗を許可する最大回数（1～5回）
@@ -52,12 +60,14 @@ Cloud Accessの運用中に生成されたトラフィックログをSyslog、Ob
     * パスワードポリシー：エージェントを使用するユーザーのパスワードルールを設定します
         * 一部の必須ポリシーは設定に関係なく常に適用されます。
 
-### ガイダンス設定
+<a id="notice-settings"></a>
+### ガイダンス設定 { #notice-settings }
 
 * ユーザーがエージェントを通じて認証を行う際に表示する案内メッセージを設定できます。
     * 最大200文字まで入力可能です。
 
-### ロゴ設定
+<a id="logo-settings"></a>
+### ロゴ設定 { #logo-settings }
 
 * 法人ロゴなど指定条件に合った画像をアップロードし、ログイン画面にロゴを表示できます。
 
