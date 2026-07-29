@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=4ded785ae584 -->
+
 # Cloud Access 개요
 
 **Security > Cloud Access > 개요**
@@ -8,7 +10,8 @@ Cloud Access는 제로 트러스트 보안 모델을 기반으로 NHN Cloud 리�
 
 <br>
 
-## 주요 기능
+<a id="section-1"></a>
+## 주요 기능 { #section-1 }
 
 * 맞춤형 계정 관리
     * 관리자는 각 사용자에게 맞춤형 접속 권한과 정책을 적용할 수 있습니다. 단순한 허용/차단을 넘어서, 사용자가 어떤 리소스에 어느 시간대에, 어떤 디바이스를 사용하여 접근 가능한지를 상세하게 제어할 수 있습니다.
@@ -22,7 +25,8 @@ Cloud Access는 제로 트러스트 보안 모델을 기반으로 NHN Cloud 리�
 
 <br>
 
-## 구성
+<a id="configuration"></a>
+## 구성 { #configuration }
 
   Cloud Access는 아래와 같이 구성할 수 있습니다.
 

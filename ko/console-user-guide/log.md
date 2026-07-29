@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=441bd686cbfd -->
+
 # 로그
 
 **Security > Cloud Access > 콘솔 사용 가이드 > 로그**
@@ -6,7 +8,8 @@
 
 <br>
 
-## 트래픽
+<a id="section-1"></a>
+## 트래픽 { #section-1 }
 
 ![traffic_log.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/traffic_log.png)
 
@@ -15,7 +18,8 @@
 
 <br>
 
-## Audit
+<a id="audit"></a>
+## Audit { #audit }
 
 ![audit_log.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/audit_log.png)
 
@@ -24,7 +28,8 @@
 
 <br>
 
-## 사용자
+<a id="section-2"></a>
+## 사용자 { #section-2 }
 
 ![audit_log.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/user_log.png)
 
@@ -32,7 +37,8 @@
 
 <br>
 
-## 엑셀 내려받기
+<a id="section-3"></a>
+## 엑셀 내려받기 { #section-3 }
 
 로그를 검색한 결과를 엑셀로 내려받을 수 있습니다.
 

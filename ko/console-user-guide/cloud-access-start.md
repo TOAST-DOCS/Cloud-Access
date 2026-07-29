@@ -1,16 +1,20 @@
+<!-- pre-align:aligned sig=fb501f17011a -->
+
 # Cloud Access 시작하기
 
 **Security > Cloud Access > 콘솔 사용 가이드 > Cloud Access 시작하기**
 
 <br>
 
-## 콘솔 설정하기
+<a id="section-1"></a>
+## 콘솔 설정하기 { #section-1 }
 
 에이전트 준비를 완료한 뒤 Cloud Access 서비스를 사용할 수 있도록 연결 설정을 하고 라우팅을 설정합니다.
 
 <br>
 
-### 설정 정보 저장
+<a id="section-1-1"></a>
+### 설정 정보 저장 { #section-1-1 }
 
 연결 설정 정보를 입력합니다. 정보를 저장한 뒤 Cloud Access를 사용할 수 있습니다.
 
@@ -25,7 +29,8 @@
 
 <br>
 
-## 라우트 설정
+<a id="section-2"></a>
+## 라우트 설정 { #section-2 }
 
 외부에서 에이전트를 사용해 연결된 사용자가 내부 인스턴스에 접근할 수 있도록 라우트를 설정합니다.
 예를 들어, 사용자 IP 할당 대역은 10.0.0.0/24 이고 연결 설정시 선택한 서브넷은 172.16.0.0/24, 그리고 접근 가능 대역은 172.16.100.0/24일 때 VPC 라우트에 아래와 같은 룰을 추가합니다.
@@ -44,7 +49,8 @@
 
 <br>
 
-## 에이전트 다운로드
+<a id="section-3"></a>
+## 에이전트 다운로드 { #section-3 }
 
 Cloud Access 서비스 사용을 위한 에이전트를 다운로드 합니다. 서비스에서 지원하는 운영체제는 아래와 같습니다.
 
@@ -52,17 +58,22 @@ Cloud Access 서비스 사용을 위한 에이전트를 다운로드 합니다. 
 * Windows 11 (64bit)
 * macOS 13.3 이상
 
-### [Windows 다운로드(64bit)](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_6b5ee6a5d2584600b5ffd3330de1846b/windows/installer/CloudAccess_Setup_x64.exe)
+<a id="windows-64bithttpskr1-api-object-storagenhncloudservicecomv1auth6b5ee6a5d2584600b5ffd3330de1846bwindowsinstallercloudaccesssetupx64exe"></a>
+### [Windows 다운로드(64bit)](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_6b5ee6a5d2584600b5ffd3330de1846b/windows/installer/CloudAccess_Setup_x64.exe) { #windows-64bithttpskr1-api-object-storagenhncloudservicecomv1auth6b5ee6a5d2584600b5ffd3330de1846bwindowsinstallercloudaccesssetupx64exe }
 
-### [Windows 다운로드(32bit)](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_6b5ee6a5d2584600b5ffd3330de1846b/windows/installer/CloudAccess_Setup_x86.exe)
+<a id="windows-32bithttpskr1-api-object-storagenhncloudservicecomv1auth6b5ee6a5d2584600b5ffd3330de1846bwindowsinstallercloudaccesssetupx86exe"></a>
+### [Windows 다운로드(32bit)](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_6b5ee6a5d2584600b5ffd3330de1846b/windows/installer/CloudAccess_Setup_x86.exe) { #windows-32bithttpskr1-api-object-storagenhncloudservicecomv1auth6b5ee6a5d2584600b5ffd3330de1846bwindowsinstallercloudaccesssetupx86exe }
 
-### [macOS 다운로드](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_6b5ee6a5d2584600b5ffd3330de1846b/macos/CloudAccess%20Installer%20v0.0.1-5309-DEV.dmg)
+<a id="macos-httpskr1-api-object-storagenhncloudservicecomv1auth6b5ee6a5d2584600b5ffd3330de1846bmacoscloudaccess20installer20v001-5309-devdmg"></a>
+### [macOS 다운로드](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_6b5ee6a5d2584600b5ffd3330de1846b/macos/CloudAccess%20Installer%20v0.0.1-5309-DEV.dmg) { #macos-httpskr1-api-object-storagenhncloudservicecomv1auth6b5ee6a5d2584600b5ffd3330de1846bmacoscloudaccess20installer20v001-5309-devdmg }
 
 <br>
 
-## 연결 설정하기
+<a id="section-4"></a>
+## 연결 설정하기 { #section-4 }
 
-### 연결 추가
+<a id="section-4-1"></a>
+### 연결 추가 { #section-4-1 }
 
 에이전트를 사용하여 nhn cloud 리소스에 접속하기 위해 연결항목을 추가합니다.
 
@@ -76,7 +87,8 @@ Cloud Access 서비스 사용을 위한 에이전트를 다운로드 합니다. 
 
 ➍ 검증 버튼을 클릭 시 검증이 완료되면 ➎ 고객 이름을 확인할 수 있고, 추가 버튼을 클릭해 연결을 추가합니다.
 
-### 연결 삭제
+<a id="section-4-2"></a>
+### 연결 삭제 { #section-4-2 }
 
 연결 항목을 클릭하면 연결 삭제 버튼이 활성화 되어 추가한 연결 항목을 삭제할 수 있습니다.
 
@@ -89,27 +101,32 @@ Cloud Access 서비스 사용을 위한 에이전트를 다운로드 합니다. 
 
 <br>
 
-## 인증을 통한 터널 연결하기
+<a id="section-5"></a>
+## 인증을 통한 터널 연결하기 { #section-5 }
 
 접속이 필요한 연결을 선택한 뒤 **연결** 버튼을 클릭해 인증을 진행합니다.
 
-### 안내 설정
+<a id="section-5-1"></a>
+### 안내 설정 { #section-5-1 }
 
 * Cloud Access 서비스 권한을 가진 관리자가 설정한 안내 문구를 노출합니다.   
     * **설정-안내 설정** 사용 안 함 설정 시 노출되지 않습니다.
 
-### 1차 인증 (계정 및 비밀번호)
+<a id="1"></a>
+### 1차 인증 (계정 및 비밀번호) { #1 }
 
 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/6.png" height="60%" />
 
 * 계정명: Cloud Access 서비스 권한을 가진 관리자에게 생성받은 계정을 입력합니다.
 * 비밀번호: 계정 생성 요청 시 입력한 메일주소로 수신받은 임시 비밀번호를 입력합니다.
 
-### 개인정보 수집·이용 동의
+<a id="section-5-2"></a>
+### 개인정보 수집·이용 동의 { #section-5-2 }
 * Cloud Access 서비스를 운영하기 위한 개인정보를 수집합니다.
     * 거절 시 서비스 이용이 제한될 수 있습니다.
 
-### 추가 인증
+<a id="section-5-3"></a>
+### 추가 인증 { #section-5-3 }
 
 * 1차 인증을 완료하게 되면 관리자가 설정한 인증 정책에 따라 추가 인증을 진행합니다. 
     * 인증 방식은 총 4개의 방식을 지원합니다.
@@ -118,7 +135,8 @@ Cloud Access 서비스 사용을 위한 에이전트를 다운로드 합니다. 
         * TOTP 
         * 생체 정보(패스 키) 
 
-### 초기 비밀번호 변경
+<a id="section-5-4"></a>
+### 초기 비밀번호 변경 { #section-5-4 }
 
 * 초기 비밀번호를 변경합니다.
     * Cloud Access 서비스 권한을 가진 관리자가 설정한 비밀번호 정책에 따라 비밀번호를 변경할 수 있습니다.
@@ -134,13 +152,15 @@ Cloud Access 서비스 사용을 위한 에이전트를 다운로드 합니다. 
 
 <br>
 
-## 에이전트 기능 살펴보기
+<a id="section-6"></a>
+## 에이전트 기능 살펴보기 { #section-6 }
 
 에이전트의 트레이 아이콘 기능에 대해서 살펴봅니다.
 
 <br>
 
-### 에이전트 연결 전
+<a id="section-6-1"></a>
+### 에이전트 연결 전 { #section-6-1 }
  * 열기: 연결 항목을 보여주는 창을 엽니다.
  * 연결: 연결 항목을 보여줍니다.
  * 업데이트 확인: 에이전트의 현재 상태를 확인합니다. 업데이트 필요 시 업데이트를 진행합니다.
@@ -150,7 +170,8 @@ Cloud Access 서비스 사용을 위한 에이전트를 다운로드 합니다. 
       * 언어 설정: 한국어, 영어, 일본어를 지원합니다.
  * 종료: 에이전트를 종료합니다.
 
-### 에이전트 연결 후
+<a id="section-6-2"></a>
+### 에이전트 연결 후 { #section-6-2 }
 * 고객이름과 계정 이름이 노출됩니다.
 * 열기: 연결 항목을 보여주는 창을 노출합니다.
 * 연결 해제: 에이전트 연결을 해제합니다.

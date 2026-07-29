@@ -1,9 +1,13 @@
+<!-- pre-align:aligned sig=95295b012c22 -->
+
 # Cloud Access 릴리스 노트
 
 **Security > Cloud Access > 릴리스 노트**
 
-## 2025. 07. 15.
+<a id="07-15"></a>
+## 2025. 07. 15. { #07-15 }
 
-### Cloud Access 신규 서비스 출시
+<a id="07-15-1"></a>
+### Cloud Access 신규 서비스 출시 { #07-15-1 }
 
 Cloud Access는 제로 트러스트 보안 모델을 기반으로 NHN Cloud 리소스에 안전하게 접속할 수 있도록 지원하는 서비스입니다.

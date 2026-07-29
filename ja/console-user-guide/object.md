@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=bb3ec8c3bb58 -->
+
 # 객체
 
 **Security > Cloud Access > 콘솔 사용 가이드 > 객체**
@@ -6,23 +8,28 @@
 
 <br>
 
-## IP 관리하기
+<a id="ip"></a>
+## IP 관리하기 { #ip }
 
-### 추가
+<a id="ip-1"></a>
+### 추가 { #ip-1 }
 
 ![object_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/object_add_1.png)
 
 필수 항목을 입력하여 객체를 생성합니다.
 
-### 수정
+<a id="ip-2"></a>
+### 수정 { #ip-2 }
 
 **수정**을 클릭해 객체를 수정할 수 있습니다.
 
-### 삭제
+<a id="ip-3"></a>
+### 삭제 { #ip-3 }
 
 **삭제**를 클릭해 객체를 삭제할 수 있습니다.
 
-### 부가 기능
+<a id="ip-4"></a>
+### 부가 기능 { #ip-4 }
 
 * 사용자 객체 추가:추가된 사용자를 기반으로 객체를 추가할 수 있습니다.
 * 템플릿 내려받기: 일괄 등록시 필요한 템플릿 파일을 다운로드 합니다.
@@ -42,23 +49,28 @@
 
 <br>
 
-## 포트 관리하기
+<a id="section-1"></a>
+## 포트 관리하기 { #section-1 }
 
-### 추가
+<a id="section-1-1"></a>
+### 추가 { #section-1-1 }
 
 ![object_add_2.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/object_add_2.png)
 
 필수 항목을 입력하여 객체를 생성합니다.
 
-### 수정
+<a id="section-1-2"></a>
+### 수정 { #section-1-2 }
 
 **수정**을 클릭해 객체를 수정할 수 있습니다.
 
-### 삭제
+<a id="section-1-3"></a>
+### 삭제 { #section-1-3 }
 
 **삭제**를 클릭해 객체를 삭제할 수 있습니다.
 
-### 부가 기능
+<a id="section-1-4"></a>
+### 부가 기능 { #section-1-4 }
 
 * 템플릿 내려받기: 일괄 등록시 필요한 템플릿 파일을 다운로드 합니다.
 * 객체 일괄 등록: 내려받은 템플릿을 사용하여 일괄적으로 객체를 등록할 수 있습니다.
