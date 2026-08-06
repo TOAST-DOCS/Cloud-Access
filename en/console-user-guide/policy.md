@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=03a6b9fba455 -->
+
 # Policy
 
 **Security > Cloud Access > Console User Guide > Policy**
@@ -6,9 +8,11 @@ In the **Policy** tab, you can manage ACL policies, which control traffic betwee
 
 <br>
 
-## Manage ACL Policies
+<a id="manage-acl-policies"></a>
+## Manage ACL Policies { #manage-acl-policies }
 
-### Add
+<a id="add"></a>
+### Add { #add }
 
 * Add policies based on Source, Destination, and Destination Port.
     * Use pre-created objects to select source, destination, and destination port.
@@ -30,26 +34,31 @@ In the **Policy** tab, you can manage ACL policies, which control traffic betwee
 * ➌ Select a port object to allow or deny access.
     * If none exists, click **Add Object** to create one.
 
-### Copy
+<a id="copy"></a>
+### Copy { #copy }
 
 * Click **Copy** to duplicate an ACL policy.
     * The copied policy is shown in a disabled state.
 
-### Modify
+<a id="modify"></a>
+### Modify { #modify }
 
 Click **Modify** to modify an existing ACL policy.
 
-### Move
+<a id="move"></a>
+### Move { #move }
 
 Click **Move** to reorder policies.
 
 ![move.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/move.png)
 
-### Delete
+<a id="delete"></a>
+### Delete { #delete }
 
 Click **Delete** to remove an ACL policy.
 
-### Additional Features
+<a id="additional-features"></a>
+### Additional Features { #additional-features }
 
 * Upload Policy in Batch: Register multiple policies at once using a downloaded template file.
 * Download Template: Download the template file required for bulk registration.
@@ -67,9 +76,11 @@ Click **Delete** to remove an ACL policy.
 
 <br>
 
-## Manage User Policies
+<a id="manage-user-policies"></a>
+## Manage User Policies { #manage-user-policies }
 
-### Add
+<a id="manage-user-policies-add"></a>
+### Add { #manage-user-policies-add }
 
 Add policies to apply to users via the agent.
 
@@ -95,11 +106,13 @@ Add policies to apply to users via the agent.
         * Registration methods: Process, Registry (Windows), File Path
     * Antivirus Check: You can specify an antivirus program. Devices without the specified antivirus installed will be blocked from connecting or required to reauthenticate.
 
-### Modify
+<a id="manage-user-policies-modify"></a>
+### Modify { #manage-user-policies-modify }
 
 Click **Modify** to modify a user policy.
 
-### Delete
+<a id="manage-user-policies-delete"></a>
+### Delete { #manage-user-policies-delete }
 
 Click **Delete** to remove a user policy.
 

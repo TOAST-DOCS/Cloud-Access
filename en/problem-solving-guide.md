@@ -1,10 +1,13 @@
+<!-- pre-align:aligned sig=f4b3b577c934 -->
+
 # Cloud Access Troubleshooting Guide
 
 **Security > Cloud Access > Troubleshooting Guide**
 
 <br>
 
-## Connected agent, but cannot access the instance
+<a id="connected-agent-but-cannot-access-the-instance"></a>
+## Connected agent, but cannot access the instance { #connected-agent-but-cannot-access-the-instance }
 
 To access the instance after logging in, make sure to configure the following settings:
 
@@ -17,19 +20,22 @@ To access the instance after logging in, make sure to configure the following se
 
 <br>
 
-## After entering information to add a connection, a failure message will be displayed during verification.
+<a id="after-entering-information-to-add-a-connection-a-failure-message-will-be-displayed-during-verification"></a>
+## After entering information to add a connection, a failure message will be displayed during verification. { #after-entering-information-to-add-a-connection-a-failure-message-will-be-displayed-during-verification }
 
 The Cloud Access agent can access both public and private clouds. Go to **Settings - Cloud Preferences** in the tray icon menu to check out the environment you wish to add a connection to.
 
 <br>
 
-## I'm a Windows user, but biometric authentication is not working
+<a id="im-a-windows-user-but-biometric-authentication-is-not-working"></a>
+## I'm a Windows user, but biometric authentication is not working { #im-a-windows-user-but-biometric-authentication-is-not-working }
 
 Cloud Access biometric authentication requires a device that supports fingerprint or facial recognition. If your device does not support biometric authentication, you can configure a PIN from Account > Sign-in options and use it as an alternative method.
 
 <br>
 
-## The user account is created, but nothing appears when clicking the Add User Object button
+<a id="the-user-account-is-created-but-nothing-appears-when-clicking-the-add-user-object-button"></a>
+## The user account is created, but nothing appears when clicking the Add User Object button { #the-user-account-is-created-but-nothing-appears-when-clicking-the-add-user-object-button }
 
 In the following cases, the user object will not appear in the list:
 
@@ -39,26 +45,30 @@ In the following cases, the user object will not appear in the list:
 
 <br>
 
-## Password policy is enabled, but login is possible with an invalid password
+<a id="password-policy-is-enabled-but-login-is-possible-with-an-invalid-password"></a>
+## Password policy is enabled, but login is possible with an invalid password { #password-policy-is-enabled-but-login-is-possible-with-an-invalid-password }
 
 Even if the password policy is **enabled** and saved, it will not apply to existing users or users who have already changed their password.
 The policy only applies to newly created users when the **Force Initial Password Change** option is enabled. In this case, reset the password of the user account and prompt the user to use a password that complies with the policy. 
 
 <br>
 
-## Force Initial Password Change is enabled, but the change screen does not appear on login
+<a id="force-initial-password-change-is-enabled-but-the-change-screen-does-not-appear-on-login"></a>
+## Force Initial Password Change is enabled, but the change screen does not appear on login { #force-initial-password-change-is-enabled-but-the-change-screen-does-not-appear-on-login }
 
 This option only applies to new user accounts created after enabling it. It does not apply to existing accounts even if the setting is changed afterward. Reset the password for the user account and proceed with the password change.
 
 <br>
 
-## Clicking the Link Account button shows a popup saying no activated services
+<a id="clicking-the-link-account-button-shows-a-popup-saying-no-activated-services"></a>
+## Clicking the Link Account button shows a popup saying no activated services { #clicking-the-link-account-button-shows-a-popup-saying-no-activated-services }
 
 If the Cloud Access service is not active, account linking is not possible. Activate the service before linking again or delete unnecessary connections.
 
 <br>
 
-## After activating services in both Pangyo and Pyeongchon regions, deactivating a single region is not supported
+<a id="after-activating-services-in-both-pangyo-and-pyeongchon-regions-deactivating-a-single-region-is-not-supported"></a>
+## After activating services in both Pangyo and Pyeongchon regions, deactivating a single region is not supported { #after-activating-services-in-both-pangyo-and-pyeongchon-regions-deactivating-a-single-region-is-not-supported }
 
 Currently, deactivation is applied to all regions at once, so deactivating a specific region individually is not supported.
 To use the service in only one region, deactivate it first, then reactivate it in the desired region. (Support for deleting individual regions is planned for a future update.)

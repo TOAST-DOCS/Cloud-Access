@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=03a6b9fba455 -->
+
 # 정책
 
 **Security > Cloud Access > 콘솔 사용 가이드 > 정책**
@@ -6,9 +8,11 @@
 
 <br>
 
-## ACL 정책 관리하기
+<a id="manage-acl-policies"></a>
+## ACL 정책 관리하기 { #manage-acl-policies }
 
-### 추가
+<a id="add"></a>
+### 추가 { #add }
 
 * 출발지, 목적지, 목적지 포트를 기반으로 정책을 추가할 수 있습니다.
     * 이미 만들어진 객체를 통해 출발지, 목적지, 목적지 포트를 선택합니다.
@@ -30,26 +34,31 @@
 * ➌ 접속을 허용하거나 차단할 포트를 선택합니다.
     * 마찬가지로, 선택할 포트 객체가 없다면 **객체 추가**를 클릭해 새로 생성하세요.
 
-### 복사
+<a id="copy"></a>
+### 복사 { #copy }
 
 * **복사**를 클릭해 ACL 정책을 복사할 수 있습니다.
     * 복사된 정책은 비활성화된 상태로 노출됩니다.
 
-### 수정
+<a id="modify"></a>
+### 수정 { #modify }
 
 **수정**을 클릭해 ACL 정책을 수정할 수 있습니다.
 
-### 이동
+<a id="move"></a>
+### 이동 { #move }
 
 **이동**을 클릭해 ACL 정책을 이동할 수 있습니다.
 
 ![move.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/move.png)
 
-### 삭제
+<a id="delete"></a>
+### 삭제 { #delete }
 
 **삭제**를 클릭해 ACL 정책을 삭제할 수 있습니다.
 
-### 부가 기능
+<a id="additional-features"></a>
+### 부가 기능 { #additional-features }
 
 * 정책 일괄 등록: 다운로드한 템플릿을 사용하여 정책을 한 번에 등록할 수 있습니다.
 * 템플릿 내려받기: 일괄 등록 시 필요한 템플릿 파일을 다운로드합니다.
@@ -67,9 +76,11 @@
 
 <br>
 
-## 사용자 정책 관리하기
+<a id="manage-user-policies"></a>
+## 사용자 정책 관리하기 { #manage-user-policies }
 
-### 추가
+<a id="manage-user-policies-add"></a>
+### 추가 { #manage-user-policies-add }
 
 사용자 에이전트에 적용할 정책을 추가할 수 있습니다.
 
@@ -95,11 +106,13 @@
         * 등록 방식: 프로세스, 레지스트리(Windows), 파일 경로
     * 백신 검사: 백신 프로그램을 설정하여 해당 백신이 설치되지 않은 디바이스는 연결이 차단되거나 재인증 처리합니다.
 
-### 수정
+<a id="manage-user-policies-modify"></a>
+### 수정 { #manage-user-policies-modify }
 
 **수정**을 클릭해 사용자 정책을 수정할 수 있습니다.
 
-### 삭제
+<a id="manage-user-policies-delete"></a>
+### 삭제 { #manage-user-policies-delete }
 
 **삭제**를 클릭해 사용자 정책을 삭제할 수 있습니다.
 

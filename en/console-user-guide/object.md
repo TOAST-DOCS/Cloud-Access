@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=24c6566066ad -->
+
 # Object
 
 **Security > Cloud Access > Console User Guide > Object**
@@ -6,23 +8,28 @@ In the **Object** tab, you can manage IPs and ports used when creating ACL polic
 
 <br>
 
-## Manage IP
+<a id="manage-ip"></a>
+## Manage IP { #manage-ip }
 
-### Add
+<a id="add"></a>
+### Add { #add }
 
 ![object_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/object_add_1.png)
 
 Create an object by entering the required information.
 
-### Modify
+<a id="modify"></a>
+### Modify { #modify }
 
 Click **Modify** to modify the object.
 
-### Delete
+<a id="delete"></a>
+### Delete { #delete }
 
 Click **Delete** to remove the object.
 
-### Additional Features
+<a id="additional-features"></a>
+### Additional Features { #additional-features }
 
 * Add User Object: Add objects based on registered users.
 * Download Template: Download a template file for bulk registration.
@@ -41,23 +48,28 @@ Click **Delete** to remove the object.
 
 <br>
 
-## Manage Port
+<a id="manage-port"></a>
+## Manage Port { #manage-port }
 
-### Add
+<a id="manage-port-add"></a>
+### Add { #manage-port-add }
 
 ![object_add_2.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/object_add_2.png)
 
 Create an object by entering the required information.
 
-### Modify
+<a id="manage-port-modify"></a>
+### Modify { #manage-port-modify }
 
 Click **Modify** to modify the object.
 
-### Delete
+<a id="manage-port-delete"></a>
+### Delete { #manage-port-delete }
 
 Click **Delete** to remove the object.
 
-### Additional Features
+<a id="manage-port-additional-features"></a>
+### Additional Features { #manage-port-additional-features }
 
 * Download Template: Download a template file for bulk registration.
 * Upload Object in Batch: Use the template to register multiple port objects at once.

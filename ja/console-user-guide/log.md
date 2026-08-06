@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=924ab8b473ea -->
+
 # ログ
 
 **セキュリティ > Cloud Access > コンソール使用ガイド > ログ**
@@ -6,7 +8,8 @@
 
 <br>
 
-## トラフィック
+<a id="traffic"></a>
+## トラフィック { #traffic }
 
 ![traffic_log.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/traffic_log.png)
 
@@ -15,7 +18,8 @@
 
 <br>
 
-## 監査（Audit）
+<a id="audit"></a>
+## 監査（Audit） { #audit }
 
 ![audit_log.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/audit_log.png)
 
@@ -24,7 +28,8 @@
 
 <br>
 
-## ユーザー
+<a id="user"></a>
+## ユーザー { #user }
 
 ![audit_log.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/user_log.png)
 
@@ -32,7 +37,8 @@
 
 <br>
 
-## Excelダウンロード
+<a id="download-as-excel"></a>
+## Excelダウンロード { #download-as-excel }
 
 検索結果をExcelファイルとしてダウンロードできます。
 

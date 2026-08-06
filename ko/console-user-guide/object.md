@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=24c6566066ad -->
+
 # 객체
 
 **Security > Cloud Access > 콘솔 사용 가이드 > 객체**
@@ -6,23 +8,28 @@
 
 <br>
 
-## IP 관리하기
+<a id="manage-ip"></a>
+## IP 관리하기 { #manage-ip }
 
-### 추가
+<a id="add"></a>
+### 추가 { #add }
 
 ![object_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/object_add_1.png)
 
 필수 항목을 입력하여 객체를 생성합니다.
 
-### 수정
+<a id="modify"></a>
+### 수정 { #modify }
 
 **수정**을 클릭해 객체를 수정할 수 있습니다.
 
-### 삭제
+<a id="delete"></a>
+### 삭제 { #delete }
 
 **삭제**를 클릭해 객체를 삭제할 수 있습니다.
 
-### 부가 기능
+<a id="additional-features"></a>
+### 부가 기능 { #additional-features }
 
 * 사용자 객체 추가: 추가된 사용자를 기반으로 객체를 추가할 수 있습니다.
 * 템플릿 내려받기: 일괄 등록 시 필요한 템플릿 파일을 다운로드합니다.
@@ -41,23 +48,28 @@
 
 <br>
 
-## 포트 관리하기
+<a id="manage-port"></a>
+## 포트 관리하기 { #manage-port }
 
-### 추가
+<a id="manage-port-add"></a>
+### 추가 { #manage-port-add }
 
 ![object_add_2.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/object_add_2.png)
 
 필수 항목을 입력하여 객체를 생성합니다.
 
-### 수정
+<a id="manage-port-modify"></a>
+### 수정 { #manage-port-modify }
 
 **수정**을 클릭해 객체를 수정할 수 있습니다.
 
-### 삭제
+<a id="manage-port-delete"></a>
+### 삭제 { #manage-port-delete }
 
 **삭제**를 클릭해 객체를 삭제할 수 있습니다.
 
-### 부가 기능
+<a id="manage-port-additional-features"></a>
+### 부가 기능 { #manage-port-additional-features }
 
 * 템플릿 내려받기: 일괄 등록 시 필요한 템플릿 파일을 다운로드합니다.
 * 객체 일괄 등록: 다운로드한 템플릿을 사용하여 일괄적으로 객체를 등록할 수 있습니다.

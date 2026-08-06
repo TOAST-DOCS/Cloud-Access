@@ -1,16 +1,20 @@
+<!-- pre-align:aligned sig=7d9aee4cb102 -->
+
 # Cloud Access 시작하기
 
 **Security > Cloud Access > 콘솔 사용 가이드 > Cloud Access 시작하기**
 
 <br>
 
-## 콘솔 설정하기
+<a id="console-settings"></a>
+## 콘솔 설정하기 { #console-settings }
 
 에이전트 준비를 완료한 뒤 Cloud Access 서비스를 사용할 수 있도록 연결 설정 및 라우팅을 설정합니다.
 
 <br>
 
-### 설정 정보 저장
+<a id="save-configuration-information"></a>
+### 설정 정보 저장 { #save-configuration-information }
 
 연결 설정 정보를 입력합니다. 정보를 저장한 뒤 Cloud Access를 사용할 수 있습니다.
 
@@ -30,11 +34,13 @@
 
 <br>
 
-## 라우트 설정하기
+<a id="route-settings"></a>
+## 라우트 설정하기 { #route-settings }
 
 외부에서 에이전트를 사용해 연결된 사용자가 내부 인스턴스에 접근할 수 있도록 라우트를 설정합니다.
 
-### 1개의 VPC
+<a id="one-vpc"></a>
+### 1개의 VPC { #one-vpc }
 
 * 사용자 IP 할당 대역: 10.0.0.0/24
 * VPC: 172.16.0.0/12
@@ -46,7 +52,8 @@
 * 대상 CIDR: 10.0.0.0/24
 * 게이트웨이: Virtual_IP 타입의 NCAccess_INF_SUB_PORT_VIP
 
-### 2개의 VPC
+<a id="two-vpcs"></a>
+### 2개의 VPC { #two-vpcs }
 
 * 사용자 IP 할당 대역: 10.0.0.0/24
 * VPC1: 172.16.0.0/12
@@ -64,7 +71,8 @@
 * 대상 CIDR: 10.0.0.0/24
 * 게이트웨이: Virtual_IP 타입의 NCAccess_INF_SUB_PORT_VIP
 
-### 다른 프로젝트
+<a id="other-projects"></a>
+### 다른 프로젝트 { #other-projects }
 
 * 사용자 IP 할당 대역: 10.0.0.0/24
 * 프로젝트 1번 VPC: 172.16.0.0/12
@@ -91,7 +99,8 @@
 
 <br>
 
-## 에이전트 다운로드하기
+<a id="download-the-agent"></a>
+## 에이전트 다운로드하기 { #download-the-agent }
 
 Cloud Access 서비스 사용을 위한 에이전트를 다운로드합니다. 서비스에서 지원하는 운영체제는 아래와 같습니다.
 
@@ -110,9 +119,11 @@ Cloud Access 서비스 사용을 위한 에이전트를 다운로드합니다. �
     
 <br>
 
-## 연결 설정하기
+<a id="add-a-connection"></a>
+## 연결 설정하기 { #add-a-connection }
 
-### 연결 추가
+<a id="add-connection"></a>
+### 연결 추가 { #add-connection }
 
 에이전트를 사용하여 NHN Cloud 리소스에 접속하기 위해 연결 항목을 추가합니다.
 
@@ -126,7 +137,8 @@ Cloud Access 서비스 사용을 위한 에이전트를 다운로드합니다. �
 
 ➍ 검증 버튼을 클릭하여 검증이 완료되면 ➎ 고객 이름을 확인할 수 있습니다. 이후 **추가**를 클릭해 연결을 추가합니다.
 
-### 연결 삭제
+<a id="delete-connection"></a>
+### 연결 삭제 { #delete-connection }
 
 연결 항목을 클릭하면 **연결 삭제** 버튼이 활성화되어 추가한 연결을 삭제할 수 있습니다.
 
@@ -139,16 +151,19 @@ Cloud Access 서비스 사용을 위한 에이전트를 다운로드합니다. �
 
 <br>
 
-## 인증을 통한 터널 연결하기
+<a id="tunnel-connection-via-authentication"></a>
+## 인증을 통한 터널 연결하기 { #tunnel-connection-via-authentication }
 
 접속이 필요한 연결을 선택한 뒤 **연결**을 클릭해 인증을 진행합니다.
 
-### 안내 설정
+<a id="notice-settings"></a>
+### 안내 설정 { #notice-settings }
 
 * Cloud Access 서비스 권한을 가진 관리자가 설정한 안내 문구를 노출합니다.   
     * **설정-안내 설정**을 **사용 안 함** 설정 시 노출되지 않습니다.
 
-### 1차 인증(계정 및 비밀번호)
+<a id="first-authentication-account-password"></a>
+### 1차 인증(계정 및 비밀번호) { #first-authentication-account-password }
 
 ![login_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/6.png)
 
@@ -156,11 +171,13 @@ Cloud Access 서비스 사용을 위한 에이전트를 다운로드합니다. �
 * 비밀번호: 계정 생성 시 입력한 메일 주소로 수신한 임시 비밀번호를 입력합니다.
 * 계정명 저장: 클릭 후 로그인을 한 뒤 재로그인 시 직전에 로그인 한 계정명을 자동으로 입력하여 노출합니다. 
 
-### 개인정보 수집·이용 동의
+<a id="agree-to-collection-and-usage-of-personal-information"></a>
+### 개인정보 수집·이용 동의 { #agree-to-collection-and-usage-of-personal-information }
 * Cloud Access 서비스를 운영하기 위한 개인정보를 수집합니다.
     * 거절 시 서비스 이용이 제한될 수 있습니다.
 
-### 추가 인증
+<a id="additional-authentication"></a>
+### 추가 인증 { #additional-authentication }
 
 * 1차 인증을 완료하게 되면 관리자가 설정한 인증 정책에 따라 추가 인증을 진행합니다. 
     * 총 4개의 인증 방식을 지원합니다.
@@ -169,7 +186,8 @@ Cloud Access 서비스 사용을 위한 에이전트를 다운로드합니다. �
         * TOTP(time-based one-time password) 
         * 생체 정보(패스 키) 
 
-### 초기 비밀번호 변경
+<a id="change-initial-password"></a>
+### 초기 비밀번호 변경 { #change-initial-password }
 
 * 초기 비밀번호를 변경합니다.
     * Cloud Access 서비스 권한을 가진 관리자가 설정한 비밀번호 정책에 따라 비밀번호를 변경할 수 있습니다.
@@ -186,13 +204,15 @@ Cloud Access 서비스 사용을 위한 에이전트를 다운로드합니다. �
 
 <br>
 
-## 에이전트 기능 살펴보기
+<a id="agent-features"></a>
+## 에이전트 기능 살펴보기 { #agent-features }
 
 에이전트의 트레이 아이콘 기능에 대해서 살펴봅니다.
 
 <br>
 
-### 에이전트 연결 전
+<a id="before-connecting-to-agent"></a>
+### 에이전트 연결 전 { #before-connecting-to-agent }
  * 열기: 연결 항목을 보여주는 화면을 엽니다.
  * 연결: 연결 항목을 보여줍니다.
  * 업데이트 확인: 에이전트의 현재 상태를 확인합니다. 업데이트 필요 시 업데이트를 진행합니다.
@@ -202,7 +222,8 @@ Cloud Access 서비스 사용을 위한 에이전트를 다운로드합니다. �
       * 언어 설정: 한국어, 영어, 일본어를 지원합니다.
  * 종료: 에이전트를 종료합니다.
 
-### 에이전트 연결 후
+<a id="after-connecting-to-agent"></a>
+### 에이전트 연결 후 { #after-connecting-to-agent }
 고객 이름과 계정명이 노출됩니다.
 * 열기: 연결 항목을 보여주는 화면을 엽니다.
 * 연결 해제: 에이전트 연결을 해제합니다.
@@ -213,7 +234,8 @@ Cloud Access 서비스 사용을 위한 에이전트를 다운로드합니다. �
 
 <br>
 
-## 에이전트 삭제하기
+<a id="delete-agent"></a>
+## 에이전트 삭제하기 { #delete-agent }
 
 에이전트는 사용자가 언제든지 직접 삭제할 수 있습니다.
 

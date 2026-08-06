@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=03a6b9fba455 -->
+
 # ポリシー
 
 **セキュリティ > Cloud Access > コンソール使用ガイド > ポリシー**
@@ -9,9 +11,11 @@
 
 <br>
 
-## ACLポリシーの管理
+<a id="manage-acl-policies"></a>
+## ACLポリシーの管理 { #manage-acl-policies }
 
-### 追加
+<a id="add"></a>
+### 追加 { #add }
 
 * 送信元、宛先、ポートを基にポリシーを追加できます。
     * 既存のオブジェクトから送信元、宛先、ポートを選択します。
@@ -33,26 +37,31 @@
 * ➌ 許可または拒否するポートを選択します。
     * オブジェクトがない場合は同様に **オブジェクト追加** をクリックしてください。
 
-### コピー
+<a id="copy"></a>
+### コピー { #copy }
 
 * **コピー**をクリックしてACLポリシーを複製できます。
     * 複製されたポリシーは無効状態で表示されます。
 
-### 編集
+<a id="modify"></a>
+### 編集 { #modify }
 
 **編集**をクリックしてACLポリシーを変更します。
 
-### 移動
+<a id="move"></a>
+### 移動 { #move }
 
 **移動**をクリックしてポリシーの順序を変更します。
 
 ![move.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/move.png)
 
-### 削除
+<a id="delete"></a>
+### 削除 { #delete }
 
 **削除**をクリックしてポリシーを削除します。
 
-### 追加機能
+<a id="additional-features"></a>
+### 追加機能 { #additional-features }
 
 * ポリシー一括登録：ダウンロードしたテンプレートファイルを使用して、複数のポリシーを一括で登録できます。
 * テンプレートのダウンロード：一括登録に必要なテンプレートファイルをダウンロードします。
@@ -70,9 +79,11 @@
 
 <br>
 
-## ユーザーポリシーの管理
+<a id="manage-user-policies"></a>
+## ユーザーポリシーの管理 { #manage-user-policies }
 
-### 追加
+<a id="manage-user-policies-add"></a>
+### 追加 { #manage-user-policies-add }
 
 エージェントユーザーに適用するポリシーを追加します。
 
@@ -97,11 +108,13 @@
         * 登録方式：プロセス、レジストリ（Windows）、ファイルパス
     * ウイルス対策ソフト確認：指定のウイルス対策ソフトがない場合、接続拒否または再認証
 
-### 編集
+<a id="manage-user-policies-modify"></a>
+### 編集 { #manage-user-policies-modify }
 
 **編集**をクリックしてユーザーポリシーを変更します。
 
-### 削除
+<a id="manage-user-policies-delete"></a>
+### 削除 { #manage-user-policies-delete }
 
 **削除**をクリックしてユーザーポリシーを削除します。
 

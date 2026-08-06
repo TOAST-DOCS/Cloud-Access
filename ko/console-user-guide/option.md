@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=a867bdc4fe63 -->
+
 # 설정
 
 **Security > Cloud Access > 콘솔 사용 가이드 > 설정**
@@ -6,13 +8,16 @@
 
 <br>
 
-## 로그 설정하기
+<a id="log-settings"></a>
+## 로그 설정하기 { #log-settings }
 
-### 기본 차단 정책 로그 설정
+<a id="default-deny-policy-log-settings"></a>
+### 기본 차단 정책 로그 설정 { #default-deny-policy-log-settings }
 
 Cloud Access 서비스를 활성화하면 **정책 - ACL 정책** 탭에 default-deny 정책이 노출되며, **사용**으로 설정할 경우 해당 정책에 매칭되는 차단 로그가 저장됩니다.
 
-### 로그 원격전송 설정
+<a id="remote-log-transfer-settings"></a>
+### 로그 원격전송 설정 { #remote-log-transfer-settings }
 
 Cloud Access 운영 중 발생된 트래픽 로그를 원격지로 자동 전송하여 장기간 보관할 수 있도록 Syslog, Object Storage, Log & Crash Search를 통한 원격 전송 기능을 제공합니다.
 
@@ -38,14 +43,17 @@ Cloud Access 운영 중 발생된 트래픽 로그를 원격지로 자동 전송
 
 <br>
 
-## 일반 설정하기
+<a id="general-settings"></a>
+## 일반 설정하기 { #general-settings }
 
-### 연결 설정
+<a id="connection-settings"></a>
+### 연결 설정 { #connection-settings }
 
 * 연결 설정에서는 Cloud Access 서비스 활성화 시 입력한 정보를 확인할 수 있으며, 이 중 고객 이름과 알고리즘은 변경 가능합니다.
     * 알고리즘은 AES-256과 ChaCha20을 지원합니다.
 
-### 로그인 보안 설정
+<a id="login-security-settings"></a>
+### 로그인 보안 설정 { #login-security-settings }
 
 * 로그인 보안 설정에서는 로그인 실패 횟수, 비밀번호 만료 기간, 비밀번호 정책을 설정할 수 있습니다.
     * 로그인 실패: 사용자가 인증을 시도할 때 허용되는 최대 실패 횟수를 설정합니다. 
@@ -55,12 +63,14 @@ Cloud Access 운영 중 발생된 트래픽 로그를 원격지로 자동 전송
     * 비밀번호 정책: 에이전트를 통해 접속하는 사용자의 비밀번호 생성 기준을 설정합니다.
         * 일부 필수 정책은 설정 여부와 관계없이 자동으로 적용됩니다. 
 
-### 안내 설정
+<a id="notice-settings"></a>
+### 안내 설정 { #notice-settings }
 
 * 안내 설정에서는 사용자가 에이전트를 통해 인증 시 표시할 안내 문구를 설정할 수 있습니다.
     * 안내 문구는 최대 200자까지 입력 가능합니다.
 
-### 로고 설정
+<a id="logo-settings"></a>
+### 로고 설정 { #logo-settings }
 
 * 로고 설정에서는 사용자의 법인 로고 등 정해진 조건에 맞는 이미지를 업로드하여 로그인 인증 화면에 로고를 표시하도록 설정할 수 있습니다.
 
