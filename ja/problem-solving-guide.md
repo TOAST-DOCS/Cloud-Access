@@ -1,65 +1,81 @@
-# Cloud Access 문제 해결 가이드
+<!-- pre-align:aligned sig=f4b3b577c934 -->
 
-**Security > Cloud Access > 문제 해결 가이드**
+# Cloud Accessトラブルシューティング
 
-<br>
-
-## 에이전트를 연결했으나 인스턴스에 접속되지 않습니다.
-
-로그인 후 인스턴스에 접속하려면 아래 설정을 추가 해야합니다.
-
-* 라우트 설정
-    * 자세한 내용은 [콘솔 사용 가이드 - 시작하기](https://docs.alpha-nhncloud.com/ja/Security/Cloud%20Access/ja/console-user-guide/cloud-access-start/)를 참고하세요.
-* ACL 정책 설정
-    * 내부 인스턴스에 접근 시 적용되는 접근 제어 정책입니다. **ACL 정책** 탭에서 IP를 허용해야 합니다.
-* Security Groups 설정
-    * 인스턴스의 보안 그룹에서 출발지 IP를 허용해야 합니다.
+**Security > Cloud Access > トラブルシューティング**
 
 <br>
 
-## 윈도우 사용자인데 생체 인증이 적용되지 않습니다.
+<a id="connected-agent-but-cannot-access-the-instance"></a>
+## エージェントは接続されましたが、インスタンスにアクセスできません { #connected-agent-but-cannot-access-the-instance }
 
-Cloud Access의 생체 인증 기능은 지문이나 얼굴 인식이 가능한 디바이스에서만 사용할 수 있습니다. 생체 인증이 없는 경우에는 **계정 - 로그인 옵션** 메뉴에서 PIN 설정 후 생체 인증을 대체하여 사용 가능합니다.
+ログイン後、インスタンスに接続するには以下の設定を追加する必要があります。
 
-<br>
-
-## 사용자 계정이 생성되어 있는데 사용자 객체 추가 버튼을 누르면 항목이 나타나지 않습니다.
-
-아래의 경우 사용자 객체 추가 목록에 노출되지 않습니다.
-
-* 사용자 계정을 생성한 직후부터 인증 완료 전까지
-    * 인증이 완료되어야 IP 확인 가능
-* 사용자 계정 생성 시 IP 타입을 유동 IP로 설정된 사용자 계정
+* ルート設定
+    * 詳細は[コンソール使用ガイド - 始める](https://docs.nhncloud.com/ja/Security/Cloud%20Access/ja/console-user-guide/cloud-access-start/)を参照してください。
+* ACLポリシー設定
+    * 内部インスタンスへのアクセス時に適用されるアクセス制御ポリシーです。**ACLポリシー** タブでIPを許可する必要があります。
+* Security Groups設定
+    * インスタンスのセキュリティグループで送信元IPを許可する必要があります。
 
 <br>
 
-## 비밀번호 정책을 사용으로 설정했는데 조건에 맞지 않는 비밀번호로도 로그인이 가능합니다.
+<a id="after-entering-information-to-add-a-connection-a-failure-message-will-be-displayed-during-verification"></a>
+## 接続追加のための情報入力後、検証時に失敗メッセージが表示されます。 { #after-entering-information-to-add-a-connection-a-failure-message-will-be-displayed-during-verification }
 
-비밀번호 정책을 **사용**으로 설정하고 저장했더라도 기존 사용자나 이미 비밀번호를 변경한 사용자 계정은 해당 정책이 적용되지 않습니다.
-비밀번호 정책은 **초기 비밀번호 강제 변경** 옵션을 선택해 새로 생성한 사용자 계정만 적용됩니다. 이런 경우 해당 사용자 계정의 비밀번호를 초기화한 뒤 정책에 맞는 비밀번호를 사용하도록 안내하세요.  
-
-<br>
-
-## 초기 비밀번호 강제 변경을 설정했지만 로그인 시 변경 화면이 나타나지 않습니다.
-
-**초기 비밀번호 강제 변경** 옵션을 선택해 새로 생성한 사용자 계정 적용됩니다. 설정 전에 생성된 사용자 계정이나 이미 생성된 사용자 계정에서 옵션을 변경해도 적용되지 않습니다. 해당 계정은 비밀번호를 초기화한 뒤 변경하세요.
+Cloud Accessエージェントはパブリック及び公共クラウドの両方に接続できます。トレイアイコンメニューの**設定 - クラウド環境設定**で、接続を追加しようとする環境であるか確認してください。
 
 <br>
 
-## 계정 연결 버튼을 클릭했는데 활성화된 서비스가 없다는 팝업이 나옵니다.
+<a id="im-a-windows-user-but-biometric-authentication-is-not-working"></a>
+## Windowsユーザーですが、生体認証が使用できません { #im-a-windows-user-but-biometric-authentication-is-not-working }
 
-Cloud Access 서비스가 비활성화 상태일 경우 계정 연결이 불가능합니다. 서비스를 활성화한 후 다시 연결 항목을 추가하거나 불필요한 항목이라면 삭제하세요.
-
-<br>
-
-## 판교 리전과 평촌 리전 모두에서 서비스를 활성화한 뒤 한 리전만 비활성화할 수 없습니다.
-
-현재는 모든 리전에서 동시에 비활성화되는 방식으로 구현되어 있어 특정 리전만 따로 비활성화하는 기능은 지원하지 않습니다.
-원하는 리전에서만 사용하려면 서비스를 비활성화한 후 사용할 리전에서만 다시 활성화하세요.(개별 리전 삭제 기능은 향후 추가 예정입니다)
+Cloud Accessの生体認証機能は、指紋や顔認識が可能なデバイスでのみ使用可能です。生体認証がない場合は、**アカウント > ログインオプション** メニューでPINを設定後、生体認証の代替として使用可能です。
 
 <br>
 
-!!! tip 문제가 해결되지 않을 경우
-    문제 해결 가이드의 안내에 따라 진행하였으나 문제가 해결되지 않을 경우 NHN Cloud 고객 센터로 문의하세요.
-    * [온라인 1:1 문의 바로가기](https://www.alpha-nhncloud.com/kr/support/inquiry?alias=tab16_15)
-    * 대표 전화: 1588-7967(운영시간: 월~금 10:00-19:00)
+<a id="the-user-account-is-created-but-nothing-appears-when-clicking-the-add-user-object-button"></a>
+## ユーザーアカウントは作成済みだが、「ユーザーオブジェクト追加」ボタンを押しても項目が表示されません { #the-user-account-is-created-but-nothing-appears-when-clicking-the-add-user-object-button }
+
+以下の場合、ユーザーオブジェクト追加リストに表示されません。
+
+* ユーザーアカウントを作成した直後から認証完了まで
+    * 認証が完了してはじめてIPを確認できます。
+* ユーザーアカウント作成時にIPタイプを動的IP(dynamic IP)に設定したユーザーアカウント
+
+<br>
+
+<a id="password-policy-is-enabled-but-login-is-possible-with-an-invalid-password"></a>
+## パスワードポリシーを「使用する」に設定したのに、条件に合わないパスワードでもログインできてしまいます { #password-policy-is-enabled-but-login-is-possible-with-an-invalid-password }
+
+パスワードポリシーを**使用**に設定して保存しても、既存のユーザーや既にパスワードを変更したユーザーアカウントには当該ポリシーが適用されません。
+パスワードポリシーは、**初期パスワードの強制変更**オプションを選択した場合にのみ、新たに作成されたユーザーアカウントに適用されます。この場合、該当するユーザーアカウントのパスワードを初期化し、ポリシーに準拠したパスワードを使用するように案内してください。
+
+<br>
+
+<a id="force-initial-password-change-is-enabled-but-the-change-screen-does-not-appear-on-login"></a>
+## 初期パスワードの強制変更を設定しましたが、ログイン時に変更画面が表示されません { #force-initial-password-change-is-enabled-but-the-change-screen-does-not-appear-on-login }
+
+**初期パスワード強制変更**オプションを選択した場合にのみ、新しく作成されたユーザーアカウントに設定が適用されます。設定前に作成されたユーザーアカウントや、既存のアカウントでオプションを変更した場合には、設定は反映されません。その場合は該当ユーザーアカウントのパスワードを初期化した後に変更を行ってください。
+
+<br>
+
+<a id="clicking-the-link-account-button-shows-a-popup-saying-no-activated-services"></a>
+## アカウント連携ボタンをクリックすると「有効なサービスがありません」というポップアップが表示されます { #clicking-the-link-account-button-shows-a-popup-saying-no-activated-services }
+
+Cloud Accessサービスが無効化されていると、アカウント連携はできません。サービスを有効化してから連携を再度追加するか、不要な連携であれば削除してください。
+
+<br>
+
+<a id="after-activating-services-in-both-pangyo-and-pyeongchon-regions-deactivating-a-single-region-is-not-supported"></a>
+## パンギョとピョンチョンリージョンの両方でサービスを有効化した後、どちらか一方だけを無効化することができません { #after-activating-services-in-both-pangyo-and-pyeongchon-regions-deactivating-a-single-region-is-not-supported }
+
+現在はすべてのリージョンが同時に無効化される仕様となっており、特定のリージョンのみを個別に無効化する機能はサポートされていません。
+特定のリージョンでのみ利用したい場合は、サービスを一度無効化した上で、使用したいリージョンでのみ再度有効化してください（個別リージョンの削除機能は今後追加予定です）。
+
+<br>
+
+!!! tip "問題が解決しない場合"
+    トラブルシューティングの案内に従って進めたにもかかわらず問題が解決しない場合は、NHN Cloudサポートまでお問い合わせください。
+    * [オンライン1:1お問い合わせ](https://www.nhncloud.com/kr/support/inquiry?alias=tab16_15)
+    * 代表電話: 1588-7967(営業時間:月～金10:00～19:00)

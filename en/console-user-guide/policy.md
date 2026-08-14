@@ -1,109 +1,128 @@
-# 정책
+<!-- pre-align:aligned sig=03a6b9fba455 -->
 
-**Security > Cloud Access > 콘솔 사용 가이드 > 정책**
+# Policy
 
-**정책** 탭에서는 외부에서 연결된 에이전트와 내부 인스턴스간 트래픽을 제어하는 **ACL정책**과 인증 및 엔드포인트 설정 등 에이전트에 적용할 정책을 그룹별로 적용할 수 있는 **사용자 정책**을 관리합니다.
+**Security > Cloud Access > Console User Guide > Policy**
+
+In the **Policy** tab, you can manage ACL policies, which control traffic between externally connected agents and internal instances, and user policies, which apply policies such as authentication and endpoint settings to agents by group.
 
 <br>
 
-## ACL 정책 관리하기
+<a id="manage-acl-policies"></a>
+## Manage ACL Policies { #manage-acl-policies }
 
-### 추가
+<a id="add"></a>
+### Add { #add }
 
-* 출발지, 목적지, 목적지 포트를 기반으로 정책을 추가할 수 있습니다.
-    * 이미 만들어진 객체를 통해 출발지, 목적지, 목적지 포트를 선택합니다.
-* 정책의 상태(활성화/비활성화)와 동작(허용/차단), 스케줄을 설정 및 정책별 로깅 여부 등의 옵션을 설정하여 정책을 추가할 수 있습니다.
+* Add policies based on Source, Destination, and Destination Port.
+    * Use pre-created objects to select source, destination, and destination port.
+* Configure options such as policy status (enabled/disabled), action (allow/deny), schedule, and logging.
 
-![acl_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/acl_1.png)
+![acl_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/10.png)
 
-![acl_2.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/acl_2.png)
+![acl_2.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/8.png)
 
-* ➊ 정책 이름을 입력하고, 아래 항목들을 설정합니다.
-    * 상태: 정책을 사용할지 사용하지 않음으로 둘지 선택
-    * 동작: 허용 또는 차단 설정
-    * 스케줄: 정책을 적용할 시간대를 지정
-    * 로깅: 로그를 남길지 여부 선택
-* ➋ 정책에 적용할 출발지와 목적지 객체를 선택합니다.
-    * 이미 등록된 객체 중에서 선택하거나 필요한 객체가 없다면 **객체 추가** 버튼을 클릭해 새로 생성할 수 있습니다.
-* ➌ 접속을 허용하거나 차단할 포트를 선택합니다.
-    * 마찬가지로, 선택할 포트 객체가 없다면 **객체 추가** 버튼을 클릭해 새로 생성하세요.
+![acl_3.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/9.png)
 
-### 복사
+* ➊ Enter a policy name and configure the following:
+    * Status: Enable or disable the policy
+    * Action: Allow or Deny
+    * Schedule: Time zone during which the policy is applied
+    * Logging: Enable or disable log collection
+* ➋ Select source and destination objects.
+    * If no object exists, click **Add Object** to create a new one.
+* ➌ Select a port object to allow or deny access.
+    * If none exists, click **Add Object** to create one.
 
-* **복사**를 클릭해 ACL 정책을 복사할 수 있습니다.
-    * 복사된 정책은 비활성화된 상태로 노출됩니다.
+<a id="copy"></a>
+### Copy { #copy }
 
-### 수정
+* Click **Copy** to duplicate an ACL policy.
+    * The copied policy is shown in a disabled state.
 
-**수정**을 클릭해 ACL 정책을 수정할 수 있습니다.
+<a id="modify"></a>
+### Modify { #modify }
 
-### 이동
+Click **Modify** to modify an existing ACL policy.
 
-**이동**을 클릭해 ACL 정책을 이동할 수 있습니다.
+<a id="move"></a>
+### Move { #move }
+
+Click **Move** to reorder policies.
 
 ![move.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/move.png)
 
-### 삭제
+<a id="delete"></a>
+### Delete { #delete }
 
-**삭제**를 클릭해 ACL 정책을 삭제할 수 있습니다.
+Click **Delete** to remove an ACL policy.
 
-### 부가 기능
+<a id="additional-features"></a>
+### Additional Features { #additional-features }
 
-* 정책 일괄 등록: 내려받은 템플릿을 사용하여 한 번에 정책을 등록할 수 있습니다.
-* 템플릿 내려받기: 일괄 등록시 필요한 템플릿 파일을 다운로드 합니다.
-* 정책 일괄 내려받기: **ACL 정책** 탭에 생성되어 있는 ACL 정책 전체를 한 번에 다운로드할 수 있습니다.
-
-<br>
-
-!!! tip 알아두기
-    * 복사된 ACL 정책은 비활성화됩니다. 복사 후 **수정** 버튼을 클릭해 정책을 활성화 하세요.
-    * 생성된 ACL 정책은 default-deny 정책 아래로는 이동할 수 없습니다.
-
-!!! danger 주의
-    * 한번 삭제한 ACL 정책은 복구할 수 없습니다. 삭제 시 주의하세요.
-    * default-deny 정책은 삭제할 수 없습니다.
+* Upload Policy in Batch: Register multiple policies at once using a downloaded template file.
+* Download Template: Download the template file required for bulk registration.
+* Download Policy in Batch Download all ACL policies currently listed in the **ACL Policy** tab at once.
 
 <br>
 
-## 사용자 정책 관리하기
+!!! tip "Note"
+    * Copied ACL policies are disabled by default. Enable them using **Modify**.
+    * Policies cannot be moved below the default-deny policy.
 
-### 추가
+!!! danger "Caution"
+    * Once an ACL policy is deleted, it cannot be recovered. Please proceed with caution when deleting.
+    * The default-deny policy cannot be deleted.
 
-사용자 에이전트에 적용할 정책을 추가할 수 있습니다.
+<br>
+
+<a id="manage-user-policies"></a>
+## Manage User Policies { #manage-user-policies }
+
+<a id="manage-user-policies-add"></a>
+### Add { #manage-user-policies-add }
+
+Add policies to apply to users via the agent.
 
 ![user_policy_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/user_policy_add_1.png)
 
-* ➊ 추가 시 필요한 기본 설정 정보를 입력합니다.
-    * 사용자 IP 할당 대역: 사용자가 에이전트를 연결한 후 자동으로 할당받을 사설 IP 대역을 입력합니다.
-    * 접근 가능 대역: 사용자가 접속할 수 있는 내부 인스턴스의 IP 대역을 입력합니다.
-        * 최대 3개까지 입력 가능
-* ➋ 사용자의 접속 조건을 설정합니다.
-    * 접속 가능 OS, 초기 비밀번호 강제 변경, 헬스체크 주기를 설정할 수 있습니다.
-* ➌ 복수 인증을 설정합니다.
-    * 4가지 방식을 지원하며, 모두 선택할 경우 모든 방식을 인증해야만 연결할 수 있습니다.
+* ➊ Enter required information:
+    * User’ IP allocation range: Private IP range automatically assigned when the user connects the agent
+    * Accessible IP Range: IP range of internal instances the user can access
+        * up to 100 ranges are allowed.
+* ➋ Set connection conditions:
+    * You can configure the allowed operating systems, password reset on first login, and set the health check cycle, idle time.
+* ➌ Set multi-factor authentication:
+    * Supports up to 4 types. If all are selected, all must be verified:
         * TOTP
-        * 휴대폰
-        * E-Mail
-        * 생체 정보
-* ➍ 엔드포인트 설정 정책을 선택합니다.
-    * 인터넷 차단: 설정 시 에이전트 연결 후 인터넷 사용이 제한됩니다.
-    * 필수 소프트웨어: 사용자가 반드시 설치해야 할 소프트웨어를 지정할 수 있습니다. 해당 프로그램이 없으면 연결이 차단되거나 재인증 처리합니다.
-        * 등록 방식: 프로세스, 레지스트리(Windows), 파일 경로
-    * 차단 소프트웨어: 악성코드나 차단하고자 하는 프로그램을 등록할 수 있습니다. 해당 프로그램이 있으면 연결이 차단되거나 재인증 처리합니다.
-        * 등록 방식: 프로세스, 레지스트리(Windows), 파일 경로
-    * 백신 검사: 백신 프로그램을 설정하여 해당 백신이 설치되지 않은 디바이스는 연결이 차단되거나 재인증 처리합니다.
+        * Mobile phone
+        * Email
+        * Biometrics
+* ➍ Configure endpoint setting policies:
+    * Block Internet: Restrict internet access after agent connection
+    * Required Software: You can specify software that users must have installed. If the required program is not found, the connection will be blocked or reauthentication will be triggered.
+        * Registration methods: Process, Registry (Windows), File Path
+    * Blocked Software: You can register malware or unwanted software to block connection. If the required program is found, the connection will be blocked or reauthentication will be triggered.
+        * Registration methods: Process, Registry (Windows), File Path
+    * Antivirus Check: You can specify an antivirus program. Devices without the specified antivirus installed will be blocked from connecting or required to reauthenticate.
 
-### 수정
+<a id="manage-user-policies-modify"></a>
+### Modify { #manage-user-policies-modify }
 
-**수정**을 클릭해 사용자 정책을 수정할 수 있습니다.
+Click **Modify** to modify a user policy.
 
-### 삭제
+<a id="manage-user-policies-delete"></a>
+### Delete { #manage-user-policies-delete }
 
-**삭제**를 클릭해 사용자 정책을 삭제할 수 있습니다.
+Click **Delete** to remove a user policy.
 
 <br>
 
-!!! tip 알아두기
-    * 백신은 윈도우 기준 Security Center의 displayname을 등록하여 검사할 수 있습니다.
-        * displayname은 파워쉘 커맨드로 확인 가능합니다.
-        * 명령어: Get-WmiObject -Namespace "root\SecurityCenter2" -Class AntiVirusProduct
+!!! tip "Note"
+    * For antivirus checks, register the display name from Windows Security Center.
+        * Display names can be found with PowerShell:
+        * Command: Get-WmiObject -Namespace "root\SecurityCenter2" -Class AntiVirusProduct
+        * Command: Get-WmiObject -Namespace "root\SecurityCenter2" -Class AntiVirusProduct
+
+!!! danger "Caution"
+    Endpoint settings must be registered separately for each OS. For example, if a file path is registered for Windows only in the allowed software, access via Windows will be inspected and either allowed or blocked. However, macOS cannot block the file path because no item is for inspection.

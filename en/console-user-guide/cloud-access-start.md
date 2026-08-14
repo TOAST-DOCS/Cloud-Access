@@ -1,159 +1,246 @@
-# Cloud Access 시작하기
+<!-- pre-align:aligned sig=7d9aee4cb102 -->
 
-**Security > Cloud Access > 콘솔 사용 가이드 > Cloud Access 시작하기**
+# Getting Started with Cloud Access
 
-<br>
-
-## 콘솔 설정하기
-
-에이전트 준비를 완료한 뒤 Cloud Access 서비스를 사용할 수 있도록 연결 설정을 하고 라우팅을 설정합니다.
+**Security > Cloud Access > Console User Guide > Getting Started with Cloud Access**
 
 <br>
 
-### 설정 정보 저장
+<a id="console-settings"></a>
+## Console Settings { #console-settings }
 
-연결 설정 정보를 입력합니다. 정보를 저장한 뒤 Cloud Access를 사용할 수 있습니다.
-
-![setting_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/setting_1.png)
-
-* VPC와 서브넷을 선택합니다.
-    * 만약, VPC와 서브넷이 없을 경우 **Network** 카테고리에서 먼저 생성하세요.
-* 고객 이름을 입력합니다.
-    * 한글, 영어, 숫자, 그리고 일부 기호(-, _, .)를 입력할 수 있습니다.
-* 알고리즘을 선택합니다.
-    * 알고리즘은 AES-256과 ChaCha20을 지원합니다.
+After preparing the agent, configure the connection and routing settings to start using the Cloud Access service.
 
 <br>
 
-## 라우트 설정
+<a id="save-configuration-information"></a>
+### Save Configuration Information { #save-configuration-information }
 
-외부에서 에이전트를 사용해 연결된 사용자가 내부 인스턴스에 접근할 수 있도록 라우트를 설정합니다.
-예를 들어, 사용자 IP 할당 대역은 10.0.0.0/24 이고 연결 설정시 선택한 서브넷은 172.16.0.0/24, 그리고 접근 가능 대역은 172.16.0.0/24일 때 VPC 라우트에 아래와 같은 룰을 추가합니다.
+Enter and save the connection settings. Once saved, Cloud Access becomes available.
 
-* 대상 CIDR: 10.0.0.0/24
-* 게이트웨이: Virtual_IP 타입의 TRAFFIC_SUBNET_INTERFACE_VIP
+![setting_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/setting_1.png)
+
+* Select a VPC and subnet.
+    * If you don't have a VPC or subnet, create them via the **VPC** and **Subnet** menus in the NHN Cloud console.
+* Enter a customer name.
+    * You can use KKorean and English letters, numbers, and some symbols (-, _, .).
+* Select an encryption algorithm.
+    * Supports AES-256 and ChaCha20 algorithms.
+
+!!! danger "Caution"
+    * Before saving the settings, make sure that the selected VPC has the Internet Gateway attached.
+        * If the Internet Gateway is not attached, Cloud Access is unavailable.
+    * When saving the configuration information, create two interfaces required for Cloud Access, one VIP for redundancy, and one Floating IP. Be cautious not to delete these resources after creation.
 
 <br>
 
-!!! danger 주의
-    * 설정 정보 저장 전 선택한 VPC에 인터넷 게이트웨이가 연결되어 있는지 확인하세요.
-        * 인터넷 게이트웨이가 연결되어 있지 않으면 Cloud Access를 사용할 수 없습니다.
-    * 사용자 IP 할당 대역은 아래의 항목과 겹칠 수 없습니다.
-        * 연결 설정 시 선택한 서브넷
-        * 접근 가능 대역 
+<a id="route-settings"></a>
+## Route Settings { #route-settings }
+
+Configure routing so users connected via agents can access internal instances.
+
+<a id="one-vpc"></a>
+### One VPC { #one-vpc }
+
+* User IP assigned band: 10.0.0.0/24
+* VPC: 172.16.0.0/12
+* Subnet selected when creating Cloud Access: 172.16.0.0/24
+* Accessible band: 172.16.100.0/24
+
+When set as above, select the routing table to which the instance requiring connection belongs in **Network - Routing** and add the following rules to the **Route** tab.
+
+* Destination CIDR: 10.0.0.0/24
+* Gateway: NCAccess_INF_SUB_PORT_VIP of type Virtual_IP
+
+<a id="two-vpcs"></a>
+### Two VPCs { #two-vpcs }
+
+* User IP assigned band: 10.0.0.0/24
+* VPC1: 172.16.0.0/12
+* VPC2: 192.168.0.0/16
+* Subnet selected when creating Cloud Access: 172.16.0.0/24
+* Accessible band: 192.168.0.0/24
+
+When set as above, set up peering between VPC1 (local) and VPC2 (peer). Then, in **Network - Routing**, select the routing table to which the instance to connect belongs and add the following rules to the **Route** tab:
+
+* Target CIDR: 10.0.0.0/24
+* Gateway: a PEERING type network interface created between VPC1 and VPC2
+
+Then, select the **Route** tab in **Peering Gateway - Peering** to add a local route rule.
+
+* Destination CIDR: 10.0.0.0/24
+* Gateway: NCAccess_INF_SUB_PORT_VIP of type Virtual_IP
+
+<a id="other-projects"></a>
+### Other Projects { #other-projects }
+
+* User IP assigned band: 10.0.0.0/24
+* Project 1 VPC: 172.16.0.0/12
+* Project 2 VPC: 192.168.0.0/16
+* Subnet selected when creating Cloud Access: 172.16.0.0/24
+* Accessible band: 192.168.0.0/24
+
+When set as above, set up peering between Project 1 (local) and Project 2 (peer). Then, in **Network - Routing**, select the routing table to which the instance to be connected belongs and add the following rule to the **Route** tab.
+
+* Target CIDR: 10.0.0.0/24
+* Gateway: a PEERING type network interface created between Project 1 VPC and Project 2 VPC
+
+Then, select the **Route** tab in **Peering Gateway - Project Peering** to add a local route rule.
+
+* Destination CIDR: 10.0.0.0/24
+* Gateway: NCAccess_INF_SUB_PORT_VIP of type Virtual_IP
+
+!!! danger "Caution"
+    * Communication is possible only when the user IP allocation range is allowed in the Security Groups applied to the instance.
+    * The user IP allocation range cannot overlap with the items below:
+        * The selected subnet
+        * The accessible network range
+    * When connecting two or more subnets to an instance, if a subnet overlaps with the user IP allocation range, communication will not function properly.
 
 <br>
 
-## 에이전트 다운로드
+<a id="download-the-agent"></a>
+## Download the Agent { #download-the-agent }
 
-Cloud Access 서비스 사용을 위한 에이전트를 다운로드 합니다. 서비스에서 지원하는 운영체제는 아래와 같습니다.
+Download the agent to use Cloud Access. The service supports the following OS:
 
-* Windows 10 1903 이상(32bit/64bit)
+* Windows 10 1903 or later (32bit/64bit)
 * Windows 11 (64bit)
-* macOS 12.0 이상
+* macOS 13.3 or later
 
-### [Windows 다운로드(64bit)](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_6b5ee6a5d2584600b5ffd3330de1846b/windows/installer/CloudAccess_Setup_x64.exe)
+| OS | Version| Download | Update date |
+|--------|------|------|------|
+| Windows(64bit)|1.2.0|[CloudAccess_Setup_x64](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_04c78c238ba54583bb1036b393ec6ae5/windows/installer/CloudAccess_Setup_x64.exe)|2026. 01. 13.|
+| Windows(32bit)|1.2.0|[CloudAccess_Setup_x86](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_04c78c238ba54583bb1036b393ec6ae5/windows/installer/CloudAccess_Setup_x86.exe)|2026. 01. 13.|
+|macOS|1.1.1|[CloudAccess_macOS](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_04c78c238ba54583bb1036b393ec6ae5/macos/CloudAccess%20Installer.dmg)|2026. 01. 13.|
 
-### [Windows 다운로드(32bit)](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_6b5ee6a5d2584600b5ffd3330de1846b/windows/installer/CloudAccess_Setup_x86.exe)
+!!! tip "Notice"
+    The Cloud Access Agent is a dedicated application that enables safe remote access to internal services by establishing a secure connection between the user's device and the service.
+    
+<br>
 
-### [macOS 다운로드](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_6b5ee6a5d2584600b5ffd3330de1846b/macos/CloudAccess%20Installer%20v0.0.1-5309-DEV.dmg)
+<a id="add-a-connection"></a>
+## Add a Connection { #add-a-connection }
+
+<a id="add-connection"></a>
+### Add Connection { #add-connection }
+
+Add a connection item to access NHN Cloud resources via the agent.
+
+![conncetion_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/add_1.png)
+
+Enter the ➊ Domain address, ➋ Customer key, and ➌ Secret key, provided by an administrator with NHN Cloud console permissions.
 
 <br>
 
-## 연결 설정하기
+![conncetion_add_3.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/add_2.png)
 
-### 연결 추가
+Click the ➍ **Validate** button. Once verified, the ➎ Customer name will be shown. Click **Add** to complete the connection.
 
-에이전트를 사용하여 nhn cloud 리소스에 접속하기 위해 연결항목을 추가합니다.
+<a id="delete-connection"></a>
+### Delete Connection { #delete-connection }
 
-![conncetion_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/connection_add_1.png)
-
-➊ 도메인 주소, ➋ 고객 키, ➌ 비밀 키를 NHN Cloud 콘솔 권한을 가진 사용자에게 전달받아 입력합니다. 
-
-<br>
-
-![conncetion_add_3.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/connection_add_3.png)
-
-➍ 검증 버튼을 클릭 시 검증이 완료되면 ➎ 고객 이름을 확인할 수 있고, 추가 버튼을 클릭해 연결을 추가합니다.
-
-### 연결 삭제
-
-연결 항목을 클릭하면 연결 삭제 버튼이 활성화 되어 추가한 연결 항목을 삭제할 수 있습니다.
+Click a connection item to activate the **Delete Connection** button and remove the connection.
 
 <br>
 
-!!! tip 알아두기
-    * 연결 추가에 필요한 값은 NHN Cloud 콘솔 권한이 있는 사용자를 통해 확인할 수 있습니다.
-        * 고객 이름은 검증이 완료되면 사용자(관리자)가 입력한 이름으로 자동으로 노출됩니다.
-    * 다수의 연결항목을 추가할 수 있으나 연결은 1개만 가능합니다.
+!!! tip "Note"
+    * The required values for connection setup can be obtained from an administrator with NHN Cloud console permissions.
+        * Once verification is completed, the customer name is automatically displayed as set by the administrator.
+    * You can register multiple connections, but only one can be active at a time.
 
 <br>
 
-## 인증을 통한 터널 연결하기
+<a id="tunnel-connection-via-authentication"></a>
+## Tunnel Connection via Authentication { #tunnel-connection-via-authentication }
 
-접속이 필요한 연결을 선택한 뒤 **연결** 버튼을 클릭해 인증을 진행합니다.
+Select the required connection and click **Connect** to proceed with authentication.
 
-### 안내 설정
+<a id="notice-settings"></a>
+### Notice Settings { #notice-settings }
 
-* Cloud Access 서비스 권한을 가진 관리자가 설정한 안내 문구를 노출합니다.   
-    * **설정-안내 설정** 사용 안 함 설정 시 노출되지 않습니다.
+* Displays notices set by the administrator.  
+    * Will not be shown if the option is disabled under **Settings > Notice Settings**.
 
-### 1차 인증 (계정 및 비밀번호)
+<a id="first-authentication-account-password"></a>
+### First Authentication (Account & Password) { #first-authentication-account-password }
 
-![login_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/login_1.png)
+![login_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/6.png)
 
-* 계정명: Cloud Access 서비스 권한을 가진 관리자에게 생성받은 계정을 입력합니다.
-* 비밀번호: 계정 생성 요청 시 입력한 메일주소로 수신받은 임시 비밀번호를 입력합니다.
+* Account Name: Enter the account received from the administrator.
+* Password: Enter the temporary password sent to your registered email.
+* Save Account Name: After clicking and logging in, the account name you logged in with will be automatically entered and exposed when you log in again.
 
-### 개인정보 수집·이용 동의
-* Cloud Access 서비스를 운영하기 위한 개인정보를 수집합니다.
-    * 거절 시 서비스 이용이 제한될 수 있습니다.
+<a id="agree-to-collection-and-usage-of-personal-information"></a>
+### Agree to collection and usage of personal information { #agree-to-collection-and-usage-of-personal-information }
+* Personal information is collected to operate Cloud Access service.
+    * Declining the agreement may restrict service use.
 
-### 추가 인증
+<a id="additional-authentication"></a>
+### Additional Authentication { #additional-authentication }
 
-* 1차 인증을 완료하게 되면 관리자가 설정한 인증 정책에 따라 추가 인증을 진행합니다. 
-    * 인증 방식은 총 4개의 방식을 지원합니다.
-        * 이메일
-        * 휴대폰 
-        * TOTP 
-        * 생체 정보(패스 키) 
+* After the first authentication is completed, additional authentication is performed according to the policy configured by the administrator.
+    * Four authentication methods are supported, as shown below.
+        * Email
+        * Mobile phone 
+        * TOTP (time-based one-time password) 
+        * Biometrics (Passkey)
 
-### 초기 비밀번호 변경
+<a id="change-initial-password"></a>
+### Change Initial Password { #change-initial-password }
 
-* 초기 비밀번호를 변경합니다.
-    * Cloud Access 서비스 권한을 가진 관리자가 설정한 비밀번호 정책에 따라 비밀번호를 변경할 수 있습니다.
-
-<br>
-
-!!! tip 알아두기
-    * nhn cloud 콘솔 권한을 가진 사용자(관리자)가 사용자 계정을 생성하면 등록된 사용자의 이메일 주소로 임시 비밀번호가 발송됩니다.
-    * 개인정보 수집·이용 동의는 계정을 생성한 뒤 첫 인증시에만 동의를 득하며, 계정 연결이 완료되어야만 동의를 득한 것으로 간주합니다. (동의 수락을 클릭 후 인증이 완료되지 않고 취소하면 다시 동의를 해야합니다.)
-    * 비밀번호 설정 시 관리자가 설정한 비밀번호 정책과 관계없이 아래의 정책은 필수로 적용됩니다.
-        * 6자리 이상 30자리 이하의 길이
-        * 사용자 계정(ID)과 동일한 비밀번호 설정 금지
+* Change the initial password.
+    * Follow the password policy set by the administrator.
 
 <br>
 
-## 에이전트 기능 살펴보기
-
-에이전트의 트레이 아이콘 기능에 대해서 살펴봅니다.
+!!! tip "Note"
+    * When an account is created, a temporary password and agent download link are sent to the user’s registered email.
+    * The personal information agreement is displayed only at the user's first login and is considered accepted only after a successful connection. If the process is canceled, the user must agree again.
+    * The following password rules always apply, regardless of the admin’s policy:
+        * 6–30 characters in length
+        * Cannot be the same as the user account (ID)
+    * **Save Account Name** only exposes the account name that was previously logged in, and does not expose accounts that were not logged in.
 
 <br>
 
-### 에이전트 연결 전
- * 열기: 연결 항목을 보여주는 창을 엽니다.
- * 연결: 연결 항목을 보여줍니다.
- * 업데이트 확인: 에이전트의 현재 상태를 확인합니다. 업데이트 필요 시 업데이트를 진행합니다.
-* 버전 정보: 에이전트의 현재 버전 정보와 오픈소스 라이선스 및 개인정보 처리 방침을 확인할 수 있습니다.
- * 설정: 에이전트의 환경 설정 및 언어 설정을 할 수 있습니다.
-      * 클라우드 환경 설정: 민간 또는 공공클라우드를 설정합니다.
-      * 언어 설정: 한국어, 영어, 일본어를 지원합니다.
- * 종료: 에이전트를 종료합니다.
+<a id="agent-features"></a>
+## Agent Features { #agent-features }
 
-### 에이전트 연결 후
-* 고객이름과 계정 이름이 노출됩니다.
-* 열기: 연결 항목을 보여주는 창을 노출합니다.
-* 연결 해제: 에이전트 연결을 해제합니다.
-* 공지: 설정된 공지를 확인합니다. (공지가 설정되어 있지 않을 수 있습니다.)
-* 버전 정보: 에이전트의 현재 버전 정보와 오픈소스 라이선스 및 개인정보 처리 방침을 확인할 수 있습니다.
-* 종료: 에이전트를 종료합니다.
+Overview of the agent tray icon features.
+
+<br>
+
+<a id="before-connecting-to-agent"></a>
+### Before Connecting to Agent { #before-connecting-to-agent }
+ * Open: Displays the connection screen.
+ * Connect: Shows connection items.
+ * Check Updates: Verifies agent version and updates if necessary.
+* Version Info: Shows current version, open source licenses, and privacy policy.
+ * Settings: Configure agent settings and language.
+      * Cloud Environment Settings: Choose a public cloud.
+      * Language Settings: Korean, English, Japanese
+ * Quit: Close the agent.
+
+<a id="after-connecting-to-agent"></a>
+### After Connecting to Agent { #after-connecting-to-agent }
+Shows customer and account names.
+* Open: Displays connection screen.
+* Disconnect: Disconnects the agent.
+* Change Password: Changes the password.
+* Notice: Displays announcements (if available).
+* Version Info: Shows version and legal info.
+* Quit: Close the agent.
+
+<br>
+
+<a id="delete-agent"></a>
+## Delete Agent { #delete-agent }
+
+Users can delete the agent at any time.
+
+* Windows: Go to Settings > Apps > Installed apps, select Cloud Access, and click Delete
+* macOS: Go to Finder > Applications, then drag Cloud Access to the Trash to delete it
+
+!!! danger "Caution"
+    Deleting the agent may restrict or disable access to Cloud Access services.

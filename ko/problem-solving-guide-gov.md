@@ -9,7 +9,7 @@
 로그인 후 인스턴스에 접속하려면 아래 설정을 추가해야 합니다.
 
 * 라우트 설정
-    * 자세한 내용은 [콘솔 사용 가이드 - 시작하기](https://docs.alpha-gov-nhncloud.com/ko/Security/Cloud%20Access/ko/console-user-guide-gov/cloud-access-start-gov/)를 참고하세요.
+    * 자세한 내용은 [콘솔 사용 가이드 - 시작하기](https://docs.gov-nhncloud.com/ko/Security/Cloud%20Access/ko/console-user-guide-gov/cloud-access-start-gov/)를 참고하세요.
 * ACL 정책 설정
     * 내부 인스턴스에 접근 시 적용되는 접근 제어 정책입니다. **ACL 정책** 탭에서 IP를 허용해야 합니다.
 * Security Groups 설정
@@ -17,7 +17,13 @@
 
 <br>
 
-## 윈도우 사용자인데 생체 인증이 적용되지 않습니다.
+## 연결 추가를 위한 정보 입력 후 검증 시 실패 메시지가 노출됩니다.
+
+Cloud Access 에이전트는 퍼블릭과 공공 클라우드 모두 접속할 수 있습니다. 트레이 아이콘 메뉴의 **설정-클라우드 환경 설정**에서 연결을 추가하고자 하는 환경인지 확인하세요.
+
+<br>
+
+## Windows 사용자인데 생체 인증이 적용되지 않습니다.
 
 Cloud Access의 생체 인증 기능은 지문이나 얼굴 인식이 가능한 디바이스에서만 사용할 수 있습니다. 생체 인증이 없는 경우에는 **계정 > 로그인 옵션** 메뉴에서 PIN 설정 후 생체 인증을 대체하여 사용 가능합니다.
 
@@ -61,5 +67,5 @@ Cloud Access 서비스가 비활성화 상태일 경우 계정 연결이 불가�
 
 !!! tip "문제가 해결되지 않을 경우"
     문제 해결 가이드의 안내에 따라 진행하였으나 문제가 해결되지 않을 경우 NHN Cloud 고객 센터로 문의하세요.
-    * [온라인 1:1 문의 바로가기](https://www.alpha-gov-nhncloud.com/kr/support/inquiry?alias=tab17_16)
+    * [온라인 1:1 문의 바로가기](https://www.gov-nhncloud.com/kr/support/inquiry?alias=tab17_16)
     * 대표 전화: 1588-7967(운영시간: 월~금 10:00-19:00)
