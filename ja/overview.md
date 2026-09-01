@@ -34,7 +34,7 @@ Cloud Accessは、ゼロトラストセキュリティモデルに基づいて�
 
 !!! tip "ポイント"
 
-    Cloud Accessは複数の方法で構成できます。詳細な設定方法は[コンソール使用ガイド - 始める](https://docs.nhncloud.com/ja/Security/Cloud%20Access/ja/console-user-guide/cloud-access-start/)を参照してください。
+    Cloud Accessは複数の方法で構成できます。詳細な設定方法は[コンソール使用ガイド - 始める](./console-user-guide/cloud-access-start/)を参照してください。
 
 <br>
 
