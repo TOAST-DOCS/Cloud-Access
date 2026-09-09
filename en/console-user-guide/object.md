@@ -14,7 +14,7 @@ In the **Object** tab, you can manage IPs and ports used when creating ACL polic
 <a id="add"></a>
 ### Add { #add }
 
-![object_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/object_add_1.png)
+![object_add_1.PNG](../../static/images/2025.06.24/object_add_1.png)
 
 Create an object by entering the required information.
 
@@ -54,7 +54,7 @@ Click **Delete** to remove the object.
 <a id="manage-port-add"></a>
 ### Add { #manage-port-add }
 
-![object_add_2.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/object_add_2.png)
+![object_add_2.PNG](../../static/images/2025.06.24/object_add_2.png)
 
 Create an object by entering the required information.
 

@@ -30,7 +30,7 @@ Cloud Accessは、ゼロトラストセキュリティモデルに基づいて�
 
 管理者は、NHN Cloudコンソールを通じてポリシー決定ポイント(policy decision point, PDP)にユーザーポリシーを設定します。その後、ユーザーがログインして内部リソースへのアクセスを試みると、ポリシー実施ポイント(policy enforcement point, PEP)であるCloud Accessサービスがリアルタイムでポリシーを検証し、アクセスを許可またはブロックします。
 
-![conncetion_Architecture_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/architecture_3.png)
+![conncetion_Architecture_1.PNG](../static/images/2025.06.24/2025.07/architecture_3.png)
 
 !!! tip "ポイント"
 

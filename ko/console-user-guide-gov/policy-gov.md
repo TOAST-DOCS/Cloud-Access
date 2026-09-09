@@ -14,11 +14,11 @@
     * 이미 만들어진 객체를 통해 출발지, 목적지, 목적지 포트를 선택합니다.
 * 정책의 상태(활성화/비활성화)와 동작(허용/차단), 스케줄을 설정하거나 정책별 로깅 여부 등의 옵션을 설정하여 정책을 추가할 수 있습니다.
 
-![acl_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/10.png)
+![acl_1.PNG](../../static/images/2025.06.24/2025.07/10.png)
 
-![acl_2.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/8.png)
+![acl_2.PNG](../../static/images/2025.06.24/2025.07/8.png)
 
-![acl_3.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/9.png)
+![acl_3.PNG](../../static/images/2025.06.24/2025.07/9.png)
 
 * ➊ 정책 이름을 입력하고, 아래 항목들을 설정합니다.
     * 상태: 정책 활성화 여부 선택
@@ -43,7 +43,7 @@
 
 **이동**을 클릭해 ACL 정책을 이동할 수 있습니다.
 
-![move.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/move.png)
+![move.PNG](../../static/images/2025.06.24/move.png)
 
 ### 삭제
 
@@ -73,7 +73,7 @@
 
 사용자 에이전트에 적용할 정책을 추가할 수 있습니다.
 
-![user_policy_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/user_policy_add_1.png)
+![user_policy_add_1.PNG](../../static/images/2025.06.24/user_policy_add_1.png)
 
 * ➊ 추가 시 필요한 기본 설정 정보를 입력합니다.
     * 사용자 IP 할당 대역: 사용자가 에이전트를 연결한 후 자동으로 할당 받을 사설 IP 대역을 입력합니다.

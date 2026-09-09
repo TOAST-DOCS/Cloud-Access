@@ -16,7 +16,7 @@
 
 **추가**를 클릭해 사용자의 계정을 추가합니다. 
 
-![user_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/user_add_1.png)
+![user_add_1.PNG](../../static/images/2025.06.24/user_add_1.png)
 
 * ➊ 기본 설정: 계정명, 휴대폰 번호, 이메일 등 계정을 사용할 사용자의 기본 정보를 입력합니다. 
 * ➋ 계정 설정: 계정에 적용할 정책을 설정합니다.
@@ -44,7 +44,7 @@
 * 템플릿 내려받기: 일괄 등록 시 필요한 템플릿 파일을 다운로드합니다.
 * 사용자 일괄 등록: 다운로드한 템플릿을 사용하여 사용자를 한 번에 일괄 등록할 수 있습니다.
 
-![user_add_2.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/user_add_2.png)
+![user_add_2.PNG](../../static/images/2025.06.24/user_add_2.png)
 
 ➊: 파일 업로드: 파일 선택 버튼을 클릭해 파일을 업로드합니다.
 ➋: 오류 데이터 노출: 업로드 한 파일의 데이터를 검증한 뒤 오류가 있는 데이터를 보여줍니다.

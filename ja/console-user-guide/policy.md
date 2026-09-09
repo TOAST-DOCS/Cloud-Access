@@ -21,11 +21,11 @@
     * 既存のオブジェクトから送信元、宛先、ポートを選択します。
 * ポリシーの状態（有効/無効）、動作（許可/拒否）、スケジュール、ログ有無などの設定が可能です。
 
-![acl_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/10.png)
+![acl_1.PNG](../../static/images/2025.06.24/2025.07/10.png)
 
-![acl_2.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/8.png)
+![acl_2.PNG](../../static/images/2025.06.24/2025.07/8.png)
 
-![acl_3.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/9.png)
+![acl_3.PNG](../../static/images/2025.06.24/2025.07/9.png)
 
 * ➊ ポリシー名を入力し、以下の項目を設定します。
     * 状態：有効または無効
@@ -53,7 +53,7 @@
 
 **移動**をクリックしてポリシーの順序を変更します。
 
-![move.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/move.png)
+![move.PNG](../../static/images/2025.06.24/move.png)
 
 <a id="delete"></a>
 ### 削除 { #delete }
@@ -87,7 +87,7 @@
 
 エージェントユーザーに適用するポリシーを追加します。
 
-![user_policy_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/user_policy_add_1.png)
+![user_policy_add_1.PNG](../../static/images/2025.06.24/user_policy_add_1.png)
 
 * ➊ 必須情報を入力します。
     * ユーザーIP割当範囲：接続時に自動割当されるプライベートIP範囲

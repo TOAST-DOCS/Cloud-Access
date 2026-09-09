@@ -23,15 +23,15 @@ Cloud Access 운영 중 발생된 트래픽 로그를 원격지로 자동 전송
 
 * Syslog: 최대 2개의 IP 주소를 입력하여 트래픽 로그를 전송합니다.
 
-![syslog.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/syslog.png)
+![syslog.PNG](../../static/images/2025.06.24/syslog.png)
 
 * Object Storage: NHN Cloud에서 제공하는 Object Storage 서비스로 로그를 전송합니다.
 
-![OBS.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/OBS.png)
+![OBS.PNG](../../static/images/2025.06.24/OBS.png)
 
 * Log & Crash Search: NHN Cloud에서 제공하는 Log & Crash Search 서비스로 로그를 전송합니다.
 
-![LNCS.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/LNCS.png)
+![LNCS.PNG](../../static/images/2025.06.24/LNCS.png)
 
 <br>
 
