@@ -34,7 +34,7 @@ The administrator set up the user policy on the policy decision point (PDP) with
 ![conncetion_Architecture_1.PNG](../static/images/2025.06.24/2025.07/architecture_3.png)
 
 !!! tip "Important"
-    Cloud Access can be configured in various ways. For details about how to configure, refer to [Console Guide - Get Started](https://docs.nhncloud.com/en/Security/Cloud%20Access/en/console-user-guide/cloud-access-start/).
+    Cloud Access can be configured in various ways. For details about how to configure, refer to [Console Guide - Get Started](./console-user-guide/cloud-access-start/).
 
 <br>
 

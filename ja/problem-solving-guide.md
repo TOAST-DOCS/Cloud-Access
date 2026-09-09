@@ -12,7 +12,7 @@
 ログイン後、インスタンスに接続するには以下の設定を追加する必要があります。
 
 * ルート設定
-    * 詳細は[コンソール使用ガイド - 始める](https://docs.nhncloud.com/ja/Security/Cloud%20Access/ja/console-user-guide/cloud-access-start/)を参照してください。
+    * 詳細は[コンソール使用ガイド - 始める](./console-user-guide/cloud-access-start/)を参照してください。
 * ACLポリシー設定
     * 内部インスタンスへのアクセス時に適用されるアクセス制御ポリシーです。**ACLポリシー** タブでIPを許可する必要があります。
 * Security Groups設定
