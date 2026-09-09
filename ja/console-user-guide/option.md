@@ -23,15 +23,15 @@ Cloud Accessの運用中に生成されたトラフィックログをSyslog、Ob
 
 * Syslog：最大2つのIPアドレスを設定し、トラフィックログを送信します。
 
-![syslog.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/syslog.png)
+![syslog.PNG](../../static/images/2025.06.24/syslog.png)
 
 * Object Storage：NHN Cloudが提供するObject Storageサービスへログを送信します。
 
-![OBS.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/OBS.png)
+![OBS.PNG](../../static/images/2025.06.24/OBS.png)
 
 * Log & Crash Search：NHN Cloudが提供するLog & Crash Searchサービスへログを送信します。
 
-![LNCS.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/LNCS.png)
+![LNCS.PNG](../../static/images/2025.06.24/LNCS.png)
 
 <br>
 

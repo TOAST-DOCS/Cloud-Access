@@ -23,15 +23,15 @@ Cloud Access provides remote log transfer features via Syslog, Object Storage, a
 
 * Syslog: Send traffic logs to up to two specified IP addresses.
 
-![syslog.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/syslog.png)
+![syslog.PNG](../../static/images/2025.06.24/syslog.png)
 
 * Object Storage: Send logs to the NHN Cloud Object Storage service.
 
-![OBS.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/OBS.png)
+![OBS.PNG](../../static/images/2025.06.24/OBS.png)
 
 * Log & Crash Search: Send logs to the NHN Cloud Log & Crash Search service.
 
-![LNCS.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/LNCS.png)
+![LNCS.PNG](../../static/images/2025.06.24/LNCS.png)
 
 <br>
 

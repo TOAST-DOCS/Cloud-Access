@@ -18,11 +18,11 @@ In the **Policy** tab, you can manage ACL policies, which control traffic betwee
     * Use pre-created objects to select source, destination, and destination port.
 * Configure options such as policy status (enabled/disabled), action (allow/deny), schedule, and logging.
 
-![acl_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/10.png)
+![acl_1.PNG](../../static/images/2025.06.24/2025.07/10.png)
 
-![acl_2.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/8.png)
+![acl_2.PNG](../../static/images/2025.06.24/2025.07/8.png)
 
-![acl_3.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/9.png)
+![acl_3.PNG](../../static/images/2025.06.24/2025.07/9.png)
 
 * ➊ Enter a policy name and configure the following:
     * Status: Enable or disable the policy
@@ -50,7 +50,7 @@ Click **Modify** to modify an existing ACL policy.
 
 Click **Move** to reorder policies.
 
-![move.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/move.png)
+![move.PNG](../../static/images/2025.06.24/move.png)
 
 <a id="delete"></a>
 ### Delete { #delete }
@@ -84,7 +84,7 @@ Click **Delete** to remove an ACL policy.
 
 Add policies to apply to users via the agent.
 
-![user_policy_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/user_policy_add_1.png)
+![user_policy_add_1.PNG](../../static/images/2025.06.24/user_policy_add_1.png)
 
 * ➊ Enter required information:
     * User’ IP allocation range: Private IP range automatically assigned when the user connects the agent

@@ -10,7 +10,7 @@
 
 ### 추가
 
-![object_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/object_add_1.png)
+![object_add_1.PNG](../../static/images/2025.06.24/object_add_1.png)
 
 필수 항목을 입력하여 객체를 생성합니다.
 
@@ -45,7 +45,7 @@
 
 ### 추가
 
-![object_add_2.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/object_add_2.png)
+![object_add_2.PNG](../../static/images/2025.06.24/object_add_2.png)
 
 필수 항목을 입력하여 객체를 생성합니다.
 

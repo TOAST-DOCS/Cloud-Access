@@ -14,7 +14,7 @@
 <a id="add"></a>
 ### 追加 { #add }
 
-![object_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/object_add_1.png)
+![object_add_1.PNG](../../static/images/2025.06.24/object_add_1.png)
 
 必須項目を入力してオブジェクトを作成します。
 
@@ -54,7 +54,7 @@
 <a id="manage-port-add"></a>
 ### 追加 { #manage-port-add }
 
-![object_add_2.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/object_add_2.png)
+![object_add_2.PNG](../../static/images/2025.06.24/object_add_2.png)
 
 必須項目を入力してオブジェクトを作成します。
 

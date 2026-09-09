@@ -18,7 +18,7 @@
 
 接続設定情報を入力して保存します。保存後、Cloud Accessを使用できます。
 
-![setting_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/setting_1.png)
+![setting_1.PNG](../../static/images/2025.06.24/2025.07/setting_1.png)
 
 * VPCとサブネットを選択します。
     * VPCやサブネットがない場合は、NHN Cloudコンソールの**VPC**または**Subnet**メニューから作成してください。
@@ -128,13 +128,13 @@ Cloud Accessサービスを利用するためのエージェントをダウン�
 
 NHN Cloudリソースに接続するための項目を追加します。
 
-![conncetion_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/add_1.png)
+![conncetion_add_1.PNG](../../static/images/2025.06.24/2025.07/add_1.png)
 
 ➊ドメイン、➋顧客キー、➌秘密キーをNHN Cloudコンソールの権限を持つ管理者から受け取り、入力します。
 
 <br>
 
-![conncetion_add_3.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/add_2.png)
+![conncetion_add_3.PNG](../../static/images/2025.06.24/2025.07/add_2.png)
  
 ➍ 「検証」ボタンをクリックし、検証完了後、➎顧客名が表示されます。その後、**追加**をクリックして接続を完了します。
 
@@ -166,7 +166,7 @@ NHN Cloudリソースに接続するための項目を追加します。
 <a id="first-authentication-account-password"></a>
 ### 第1段階認証（アカウントとパスワード） { #first-authentication-account-password }
 
-![login_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/6.png)
+![login_1.PNG](../../static/images/2025.06.24/2025.07/6.png)
 
 * アカウント名：管理者から発行されたアカウントを入力します。
 * パスワード：メールで届いた初期パスワードを入力します。
