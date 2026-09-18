@@ -115,7 +115,7 @@ Cloud Accessサービスを利用するためのエージェントをダウン�
 | Windows(32bit)|1.2.0|[CloudAccess_Setup_x86](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_04c78c238ba54583bb1036b393ec6ae5/windows/installer/CloudAccess_Setup_x86.exe)|2026. 01. 13.|
 |macOS|1.1.1|[CloudAccess_macOS](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_04c78c238ba54583bb1036b393ec6ae5/macos/CloudAccess%20Installer.dmg)|2026. 01. 13.|
 
-!!! tip 「ポイント」
+!!! tip "ポイント"
     Cloud Accessエージェントは、ユーザー端末とサービス間のセキュリティ接続を通じて、外部環境からでも安全な内部サービスへのアクセスをサポートする専用プログラムです。
 
 <br>
