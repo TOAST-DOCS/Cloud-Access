@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=c3d628a9af03 -->
+
 # 사용자
 
 **Security > Cloud Access > 콘솔 사용 가이드 > 사용자**
@@ -6,13 +8,15 @@
 
 <br>
 
-## 사용자 계정 관리하기
+<a id="manage-user-accounts"></a>
+## 사용자 계정 관리하기 { #manage-user-accounts }
 
-### 추가
+<a id="add"></a>
+### 추가 { #add }
 
 **추가**를 클릭해 사용자의 계정을 추가합니다. 
 
-![user_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/user_add_1.png)
+![user_add_1.PNG](../../static/images/2025.06.24/user_add_1.png)
 
 * ➊ 기본 설정: 계정명, 휴대폰 번호, 이메일 등 계정을 사용할 사용자의 기본 정보를 입력합니다. 
 * ➋ 계정 설정: 계정에 적용할 정책을 설정합니다.
@@ -24,20 +28,23 @@
     * 미사용 계정 잠금: 일정 기간 동안 계정을 사용하지 않으면 자동으로 잠금 처리됩니다.
     * 접속 허용 IP/MAC 주소: 해당 계정으로 로그인할 수 있는 IP 또는 MAC 주소를 각각 최대 3개까지 지정할 수 있습니다.
 
-### 수정
+<a id="modify"></a>
+### 수정 { #modify }
 
 **수정**을 클릭해 사용자의 계정을 수정합니다.
 
-### 삭제
+<a id="delete"></a>
+### 삭제 { #delete }
 
 **삭제**를 클릭해 사용자의 계정을 삭제합니다.
 
-### 부가 기능
+<a id="additional-features"></a>
+### 부가 기능 { #additional-features }
 
 * 템플릿 내려받기: 일괄 등록 시 필요한 템플릿 파일을 다운로드합니다.
 * 사용자 일괄 등록: 다운로드한 템플릿을 사용하여 사용자를 한 번에 일괄 등록할 수 있습니다.
 
-![user_add_2.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/user_add_2.png)
+![user_add_2.PNG](../../static/images/2025.06.24/user_add_2.png)
 
 ➊: 파일 업로드: 파일 선택 버튼을 클릭해 파일을 업로드합니다.
 ➋: 오류 데이터 노출: 업로드 한 파일의 데이터를 검증한 뒤 오류가 있는 데이터를 보여줍니다.
