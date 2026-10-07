@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=b92c97be33b3 -->
+
 # Cloud Access Overview
 
 **Security > Cloud Access > Overview**
@@ -8,7 +10,8 @@ Using a dedicated agent, users can access resources easily without complex confi
 
 <br>
 
-## Main Features
+<a id="main-features"></a>
+## Main Features { #main-features }
 
 * Customized Account Management
     * Administrators can assign customized access permissions and policies to each user. Beyond simple allow/block rules, they can define which resources a user can access, during which time frames, and from which devices.
@@ -23,18 +26,20 @@ Using a dedicated agent, users can access resources easily without complex confi
     
 <br>
 
-## Configuration & how it works
+<a id="configuration-how-it-works"></a>
+## Configuration & how it works { #configuration-how-it-works }
 
 The administrator set up the user policy on the policy decision point (PDP) with the NHN Cloud console. If a user attempts to access the internal resource with sign-in afterwards, it will be allowed or denied by performing the real-time policy verification with Cloud Access service, which is a policy enforcement point (PEP).
 
-![conncetion_Architecture_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/architecture_3.png)
+![conncetion_Architecture_1.PNG](../static/images/2025.06.24/2025.07/architecture_3.png)
 
 !!! tip "Important"
-    Cloud Access can be configured in various ways. For details about how to configure, refer to [Console Guide - Get Started](https://docs.nhncloud.com/en/Security/Cloud%20Access/en/console-user-guide/cloud-access-start/).
+    Cloud Access can be configured in various ways. For details about how to configure, refer to [Console Guide - Get Started](./console-user-guide/cloud-access-start/).
 
 <br>
 
-## Price
+<a id="price"></a>
+## Price { #price }
 The Cloud Access service fee is charged as follows:
 
 * Fees will be charged from the moment you save and complete the required service settings in **Settings - Connection Settings**.
@@ -44,8 +49,8 @@ For more information on service fees, please refer to [Service Fee] (https://www
 
 <br>
 
-## Disable
+<a id="disable"></a>
+## Disable { #disable }
 
 !!! danger "Caution"
     If Cloud Access service is enabled in both the Korea (Pangyo) and Korea (Pyeongchon) regions and you disable it, the service will be disabled in all regions. Please be careful when disabling the service. (feature updates planned)
-

@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=c3d628a9af03 -->
+
 # User
 
 **Security > Cloud Access > Console User Guide > User**
@@ -6,13 +8,15 @@ In the **User** tab, you can manage the policies for user accounts that connect 
 
 <br>
 
-## Manage User Accounts
+<a id="manage-user-accounts"></a>
+## Manage User Accounts { #manage-user-accounts }
 
-### Add
+<a id="add"></a>
+### Add { #add }
 
 Click **Add** to add a user account.
 
-![user_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/user_add_1.png)
+![user_add_1.PNG](../../static/images/2025.06.24/user_add_1.png)
 
 * ➊ Basic Settings: Enter basic information for the user who will use the account, such as account name, mobile phone number, and email. 
 * ➋ Account Settings: Configure the policy to be applied to the account.
@@ -24,20 +28,23 @@ Click **Add** to add a user account.
     * Inactive Account Lock: If the account is not used for a certain period, it will be automatically locked.
     * Allowed IP/MAC Addresses: You can specify up to three IP or MAC addresses that can log in using the account.
 
-### Modify
+<a id="modify"></a>
+### Modify { #modify }
 
 Click **Modify** to modify the user account.
 
-### Delete
+<a id="delete"></a>
+### Delete { #delete }
 
 Click **Delete** to delete the user account.
 
-### Additional Features
+<a id="additional-features"></a>
+### Additional Features { #additional-features }
 
 * Download Template: Download the template file required for bulk registration.
 * Upload User in Batch: Register multiple users at once using the downloaded template file.
 
-![user_add_2.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/user_add_2.png)
+![user_add_2.PNG](../../static/images/2025.06.24/user_add_2.png)
 
 ➊: File Upload: Click the file selection button to upload a file.
 ➋: Display Error Data: After verifying the uploaded file, displays any data with errors.

@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=b92c97be33b3 -->
+
 # Cloud Access概要
 
 **Security > Cloud Access > 概要**
@@ -8,7 +10,8 @@ Cloud Accessは、ゼロトラストセキュリティモデルに基づいて�
 
 <br>
 
-## 主な機能
+<a id="main-features"></a>
+## 主な機能 { #main-features }
 
 * カスタマイズ可能な管理
     * 管理者は各ユーザーに対してカスタマイズされた接続権限とポリシーを適用できます。単なる許可／ブロックにとどまらず、ユーザーがどのリソースに、どの時間帯に、どのデバイスを使ってアクセスできるかを詳細に制御できます。
@@ -22,19 +25,21 @@ Cloud Accessは、ゼロトラストセキュリティモデルに基づいて�
 
 <br>
 
-## 構成と動作方式
+<a id="configuration-how-it-works"></a>
+## 構成と動作方式 { #configuration-how-it-works }
 
 管理者は、NHN Cloudコンソールを通じてポリシー決定ポイント(policy decision point, PDP)にユーザーポリシーを設定します。その後、ユーザーがログインして内部リソースへのアクセスを試みると、ポリシー実施ポイント(policy enforcement point, PEP)であるCloud Accessサービスがリアルタイムでポリシーを検証し、アクセスを許可またはブロックします。
 
-![conncetion_Architecture_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/2025.07/architecture_3.png)
+![conncetion_Architecture_1.PNG](../static/images/2025.06.24/2025.07/architecture_3.png)
 
 !!! tip "ポイント"
 
-    Cloud Accessは複数の方法で構成できます。詳細な設定方法は[コンソール使用ガイド - 始める](https://docs.nhncloud.com/ja/Security/Cloud%20Access/ja/console-user-guide/cloud-access-start/)を参照してください。
+    Cloud Accessは複数の方法で構成できます。詳細な設定方法は[コンソール使用ガイド - 始める](./console-user-guide/cloud-access-start/)を参照してください。
 
 <br>
 
-## 料金
+<a id="price"></a>
+## 料金 { #price }
 Cloud Accessサービスの料金決済は次のとおりです。
 
 * **設定-接続設定**でサービスに必要な設定を行い、保存して完了した瞬間から料金が発生します。
@@ -44,7 +49,8 @@ Cloud Accessサービスの料金決済は次のとおりです。
 
 <br>
 
-## 無効化
+<a id="disable"></a>
+## 無効化 { #disable }
 
 !!! danger "注意"
     韓国(パンギョ)リージョンと韓国(ピョンチョン)リージョンでそれぞれCloud Accessサービスが有効化された状態でサービスを無効化すると、全てのリージョンにあるサービスが無効化されます。無効化の際はご注意ください。(機能改善予定) 
