@@ -111,7 +111,7 @@ Cloud Access 서비스 사용을 위한 에이전트를 다운로드합니다. �
 | 운영체제 | 버전| 다운로드 | 업데이트 날짜 |
 |--------|------|------|------|
 | Windows(64bit)|1.2.1|[CloudAccess_Setup_x64](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_04c78c238ba54583bb1036b393ec6ae5/windows/installer/CloudAccess_Setup_x64.exe)|2026. 10. 27.|
-| Windows(32bit)|1.2.|[CloudAccess_Setup_x86](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_04c78c238ba54583bb1036b393ec6ae5/windows/installer/CloudAccess_Setup_x86.exe)|2026. 10. 27.|
+| Windows(32bit)|1.2.1|[CloudAccess_Setup_x86](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_04c78c238ba54583bb1036b393ec6ae5/windows/installer/CloudAccess_Setup_x86.exe)|2026. 10. 27.|
 |macOS|1.1.2|[CloudAccess_macOS](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_04c78c238ba54583bb1036b393ec6ae5/macos/CloudAccess%20Installer.dmg)|2026. 10. 27.|
 
 !!! tip "알아두기"

@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=c3d628a9af03 -->
+
 # ユーザー
 
 **Security > Cloud Access > コンソールユーザーガイド > ユーザー**
@@ -5,13 +7,15 @@
 **ユーザー**タブでは、エージェントをインストールした後に接続するユーザーアカウントのポリシーを管理します。
 <br>
 
-## ユーザーアカウントの管理
+<a id="manage-user-accounts"></a>
+## ユーザーアカウントの管理 { #manage-user-accounts }
 
-### 追加
+<a id="add"></a>
+### 追加 { #add }
 
 **追加**をクリックしてユーザーアカウントを追加します。
 
-![user_add_1.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/user_add_1.png)
+![user_add_1.PNG](../../static/images/2025.06.24/user_add_1.png)
 
 * ➊ 基本設定：アカウント名、携帯電話番号、メールアドレスなど、アカウントを使用するユーザーの基本情報を入力します。
 * ➋ アカウント設定：アカウントに適用するポリシーを設定します。
@@ -23,20 +27,23 @@
     * 未使用アカウントロック：一定期間アカウントが使用されなかった場合、自動的にロックされます。
     * 接続許可IP/MACアドレス：該当アカウントでログインできるIPまたはMACアドレスを最大3つまで指定できます。
 
-### 修正
+<a id="modify"></a>
+### 修正 { #modify }
 
 **修正**をクリックしてユーザーアカウントを修正します。
 
-### 削除
+<a id="delete"></a>
+### 削除 { #delete }
 
 **削除**をクリックしてユーザーアカウントを削除します。
 
-### 追加機能
+<a id="additional-features"></a>
+### 追加機能 { #additional-features }
 
 * テンプレートのダウンロード：一括登録に必要なテンプレートファイルをダウンロードします。
 * ユーザー一括登録：ダウンロードしたテンプレートを使用して、ユーザーを一括で登録できます。
 
-![user_add_2.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/user_add_2.png)
+![user_add_2.PNG](../../static/images/2025.06.24/user_add_2.png)
 
 ➊: ファイルアップロード：ファイル選択ボタンをクリックしてファイルをアップロードします。
 ➋: エラーデータの表示：アップロードされたファイルのデータを検証し、エラーのあるデータを表示します。

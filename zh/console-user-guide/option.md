@@ -70,4 +70,3 @@ Cloud Access provides remote log transfer features via Syslog, Object Storage, a
 
 !!! danger "Caution"
     * Login security settings apply to all users using the Cloud Access agent. Use caution when enabling them.
-

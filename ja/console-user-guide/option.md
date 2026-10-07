@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=a867bdc4fe63 -->
+
 # 設定
 
 **セキュリティ > Cloud Access > コンソール使用ガイド > 設定**
@@ -6,45 +8,51 @@
 
 <br>
 
-## ログ設定
+<a id="log-settings"></a>
+## ログ設定 { #log-settings }
 
-### デフォルト拒否ポリシーのログ設定
+<a id="default-deny-policy-log-settings"></a>
+### デフォルト拒否ポリシーのログ設定 { #default-deny-policy-log-settings }
 
 Cloud Accessサービスを有効にすると、**ポリシー > ACLポリシー**タブに default-deny ポリシーが表示されます。**使用**に設定すると、そのポリシーに一致するトラフィックのログが保存されます。
 
-### リモートログ転送設定
+<a id="remote-log-transfer-settings"></a>
+### リモートログ転送設定 { #remote-log-transfer-settings }
 
 Cloud Accessの運用中に生成されたトラフィックログをSyslog、Object Storage、Log & Crash Searchを利用してリモートに自動転送し、長期保管が可能です。
 
 * Syslog：最大2つのIPアドレスを設定し、トラフィックログを送信します。
 
-![syslog.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/syslog.png)
+![syslog.PNG](../../static/images/2025.06.24/syslog.png)
 
 * Object Storage：NHN Cloudが提供するObject Storageサービスへログを送信します。
 
-![OBS.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/OBS.png)
+![OBS.PNG](../../static/images/2025.06.24/OBS.png)
 
 * Log & Crash Search：NHN Cloudが提供するLog & Crash Searchサービスへログを送信します。
 
-![LNCS.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_cloud_access/2025.06.24/LNCS.png)
+![LNCS.PNG](../../static/images/2025.06.24/LNCS.png)
 
 <br>
 
 !!! tip "ポイント"
     * Syslogは単一のIPアドレスのみ設定可能で、IP範囲やCIDRはサポートされていません。
     *  Object StorageおよびLog & Crash Searchにログを転送するには、事前にサービスを有効化しておく必要があります。
-    * Object Storage設定に必要な入力情報は [Object Storage ユーザーガイド](https://docs.nhncloud.com/ja/Storage/Object%20Storage/ja/s3-api-guide/#aws-sdk)を参照してください。
+    * Object Storage設定に必要な入力情報は [Object Storage ユーザーガイド](/Storage/Object%20Storage/ja/s3-api-guide/#aws-sdk)を参照してください。
 
 <br>
 
-## 一般設定
+<a id="general-settings"></a>
+## 一般設定 { #general-settings }
 
-### 接続設定
+<a id="connection-settings"></a>
+### 接続設定 { #connection-settings }
 
 * Cloud Accessサービスの有効化時に入力した情報を確認できます。顧客名とアルゴリズムは変更可能です。
     * サポートされているアルゴリズム：AES-256、ChaCha20
 
-### ログインセキュリティ設定
+<a id="login-security-settings"></a>
+### ログインセキュリティ設定 { #login-security-settings }
 
 * ログイン失敗回数、パスワード有効期間、パスワードポリシーを設定します。
     * ログイン失敗：ログイン失敗を許可する最大回数（1～5回）
@@ -52,12 +60,14 @@ Cloud Accessの運用中に生成されたトラフィックログをSyslog、Ob
     * パスワードポリシー：エージェントを使用するユーザーのパスワードルールを設定します
         * 一部の必須ポリシーは設定に関係なく常に適用されます。
 
-### ガイダンス設定
+<a id="notice-settings"></a>
+### ガイダンス設定 { #notice-settings }
 
 * ユーザーがエージェントを通じて認証を行う際に表示する案内メッセージを設定できます。
     * 最大200文字まで入力可能です。
 
-### ロゴ設定
+<a id="logo-settings"></a>
+### ロゴ設定 { #logo-settings }
 
 * 法人ロゴなど指定条件に合った画像をアップロードし、ログイン画面にロゴを表示できます。
 
@@ -70,4 +80,3 @@ Cloud Accessの運用中に生成されたトラフィックログをSyslog、Ob
 
 !!! danger "注意"
     ログインセキュリティ設定は、Cloud Accessエージェントを使用する全ユーザーに共通で適用されます。設定時にはご注意ください。
-
