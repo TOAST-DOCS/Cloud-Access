@@ -14,7 +14,6 @@ In the **Log** tab, you can search various logs generated during the operation o
 ![traffic_log.PNG](../../static/images/2025.06.24/traffic_log.png)
 
 You can view communication traffic logs that are generated when users connect to instances using the Cloud Access service agent.
-* Logs can be searched for up to three months in the past, with each search covering a one-month period.
 
 <br>
 
