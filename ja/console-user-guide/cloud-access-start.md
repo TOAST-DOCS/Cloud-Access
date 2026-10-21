@@ -229,6 +229,7 @@ NHN Cloudリソースに接続するための項目を追加します。
 <a id="after-connecting-to-agent"></a>
 ### 接続後 { #after-connecting-to-agent }
 顧客名とアカウント名が表示
+
 * 開く：接続項目表示
 * 接続解除：接続解除
 * パスワード変更:パスワードを変更します。
