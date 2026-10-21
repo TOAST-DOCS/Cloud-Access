@@ -227,6 +227,7 @@ Overview of the agent tray icon features.
 <a id="after-connecting-to-agent"></a>
 ### After Connecting to Agent { #after-connecting-to-agent }
 Shows customer and account names.
+
 * Open: Displays connection screen.
 * Disconnect: Disconnects the agent.
 * Change Password: Changes the password.
