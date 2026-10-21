@@ -1,3 +1,5 @@
+<!-- machine_translated: true -->
+
 <!-- pre-align:aligned sig=7d9aee4cb102 -->
 
 # Cloud Access 開始ガイド
